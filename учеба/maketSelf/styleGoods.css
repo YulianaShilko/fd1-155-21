@@ -1,0 +1,236 @@
+
+/* заголовки */
+.header-top2 .clear{
+    padding-top: 52px;
+}
+.header-top2{
+    padding-bottom: 0px;
+}
+
+/* контент */
+.content-total-Goods{
+    padding-top: 101px;
+    padding-bottom: 136px;
+}
+.pictureOfGoods-Goods{
+    float: left;
+    width:560px;
+}
+.pictureOfGoods-Goods img:first-child{
+    padding-bottom: 32px;
+}
+.pictureOfGoods-Goods img:nth-child(3) img:last-child{
+    float: left;
+}
+.contentOfGoods-Goods{
+    float: right;
+}
+.headerContentOfGoods-Goods p{
+    font-family: 'GothamRounded-Bold';
+    font-size: 36px;
+    float: left;
+}
+.headerContentOfGoods-Goods img{
+    float: right;
+    margin-left: 32px;
+    padding-top: 15px;
+}
+.code-Goods{
+    padding-bottom: 44px;
+}
+.code-Goods p{
+    color: #757575;
+    font-size: 12px;
+    
+}
+.price-Goods{
+    padding-bottom: 33px;
+
+}
+.contentOfGoods-Goods button{
+    float: left;
+    width:204px;
+    height: 64px;
+    background-color: #00B6F2;
+    border: none;
+    border-radius: 8px;
+    font-family: 'GothamRounded-Medium';
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.price-Goods p:first-of-type{
+    float: left;
+    font-size: 32px;
+    font-family: 'GothamRounded-Medium';
+    padding-left: 32px;
+    margin-top: 10px;
+}
+.price-Goods p:last-of-type{
+    float: left;
+    font-size: 18px;
+    text-decoration-line: line-through;
+    color: hsl(197, 3%, 50%);
+    padding-left: 12px;
+    margin-top: 19px;
+}
+.freeShipping-Goods{
+    padding-bottom: 33px;
+}
+.freeShipping-Goods img{
+    float: left;
+} 
+.freeShipping-Goods p{
+    font-size: 18px;
+    float: left;
+    margin-top: 7px;
+}
+.headerDescriptionOfGoods {
+    font-size: 18px;
+    font-family: 'GothamRounded-Medium';
+    padding-bottom: 13px;
+}
+.contentOfGoods-Goods figure{
+    float:left;
+    padding-right: 23px;
+    padding-bottom: 20px;
+}
+.contentOfGoods-Goods figcaption{
+    font-size: 12px;
+    text-align: center;
+}
+.contentDescriptionOfGoods{
+    font-size: 18px;
+    padding-bottom: 25px;
+}
+.logo{
+    padding-bottom: 24px;
+}
+.logo-Goods img{
+    float: left;
+} 
+.logo-Goods p{
+    font-size: 18px;
+    color: #7C8183;
+    float: left;
+    margin-left: 7px;
+}
+/* also like */
+.alsolikeTotal-Goods{
+    width: 1296px;
+    height: 480px;
+    margin: 0 auto;
+    background-color:#F5F9FA;
+}
+.headeralsolikeTotal-Goods{
+    font-size: 24px;
+    font-family: 'GothamRounded-Medium';
+    padding-top: 33px;
+    text-align: center;
+}
+.alsoGoods-Goods{
+    padding-left: 181px;
+    padding-top: 24px;
+    float: left;
+}
+.alsoGoodsPicture-Goods{
+    Width: 240px;
+    Height: 272px;
+    border-radius: 8px;
+
+}
+.alsoGoodsPicture-Goods img{
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.alsoGoodsPicture-Goods p{
+    float: left;
+    font-size: 18px;
+    font-family: 'GothamRounded-Bold';
+   margin-top: 224px;
+   margin-left: 88px;
+}
+.footeralsoGoodsPicture-Goods{
+    Width: 240px;
+    Height: 272px; 
+    padding-top: 20px;
+}
+.raiting-stars{
+    float: left;
+    margin-top: 5px;
+}
+.footeralsoGoodsPicture-Goods p{
+    float: right;
+    font-family: 'GothamRounded-Medium';
+    font-size: 24px;
+}
+/* review */
+.reviewTotal-Goods{
+    padding-bottom: 40px;
+}
+.headerLeftReview-Goods{
+    float: left;
+}
+.headerLeftReview-Goods p{
+    float: left;
+    padding-right: 36px;
+    font-size: 18px;
+}
+.headerRightReview-Goods{
+    float: right;
+}
+.headerRightReview-Goods p{
+    float: left;
+    padding-right: 48px;
+    padding-left: 12px;   
+    font-size: 16px;
+    color: #7C8183;
+    margin-top: 4px;
+}
+.headerRightReview-Goods button{
+    float: right;
+    border: 1px solid #3C4B55;
+    border-radius: 8px;
+    width: 176px;
+    height: 40px;
+    font-size: 16px;
+    background: transparent;
+    margin-top: -6px;
+    
+}
+.headerRightReview-Goods .raiting-stars{
+    float: left;
+}
+.contentReview-Goods{
+    padding-top: 50px;
+    padding-bottom: 35px;
+}
+.maincontentReview-Goods{
+    float: left;
+}
+.namemaincontentReview-Goods{
+    float: left;
+    font-size: 16px;
+    font-family: 'GothamRounded-Medium';
+}
+.daatamaincontentReview-Goods{
+    float: left;
+    font-size: 16px;
+    color: #7C8183;
+    padding-left: 16px;
+}
+
+.picturecontentReview-Goods{
+    float: right;
+}
+.maincontentReview-Goods .raiting-stars{
+    padding-top: 12px;
+}
+.reviewmaincontentReview-Goods{
+    font-size: 16px;
+    padding-top: 20px;
+}
+.picturecontentReview-Goods img{
+    border-radius: 8px;
+    padding-left: 16px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        
+    <style>
+.raiting-stars {
+  display: inline-block;
+}
+.raiting-stars .check {
+  display: none;
+}
+.raiting-stars .stars {
+  display: inline-block;
+  background: url('star0.png');
+  height: 75px;
+  width: 75px;
+}
+ 
+.check:nth-of-type(1):hover ~ .stars:nth-of-type(1),
+.check:nth-of-type(2):hover ~ .stars:nth-of-type(-n+2),
+.check:nth-of-type(3):hover ~ .stars:nth-of-type(-n+3),
+.check:nth-of-type(4):hover ~ .stars:nth-of-type(-n+4),
+.check:nth-of-type(5):hover ~ .stars:nth-of-type(-n+5) {
+  background: url('star1.png');
+}
+    </style>
+
+</head>
+<body>
+<div class="raiting-stars">
+  <input class="check" id="one" type="radio" name="stars"/>
+  <input class="check" id="two" type="radio" name="stars"/>
+  <input class="check" id="three" type="radio" name="stars"/>
+  <input class="check" id="four" type="radio" name="stars"/>
+  <input class="check" id="five" type="radio" name="stars"/>
+  <label class="stars" for="one"></label>
+  <label class="stars" for="two"></label>
+  <label class="stars" for="three"></label>
+  <label class="stars" for="four"></label>
+  <label class="stars" for="five"></label>
+</div>
+
+    </body>
+</html>

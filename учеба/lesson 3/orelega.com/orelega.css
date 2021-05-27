@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'OrelegaOne-Regular';
+  src: url('OrelegaOne-Regular.eot');
+  src: url('OrelegaOne-Regular.eot?#iefix') format('embedded-opentype'),
+       url('OrelegaOne-Regular.svg#OrelegaOne-Regular') format('svg'),
+       url('OrelegaOne-Regular.ttf') format('truetype'),
+       url('OrelegaOne-Regular.woff') format('woff'),
+       url('OrelegaOne-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

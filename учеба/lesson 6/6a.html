@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    .tag-a a{
+        color: green; border-right: solid red 3px; padding: 5px 10px 10px 0
+}
+    .tag-a a:hover{
+    color: red;
+}
+    
+    
+    .tag-p p{   
+        display: inline-block;  
+        border-right: solid red 3px; 
+        padding: 5px 10px 10px 0}
+    .tag-p a{
+        color: green;
+    }
+    
+    .tag-p a:hover{
+            color: red;
+     
+}
+    .table td{
+            color: green; border-right: solid red 3px; padding: 5px 10px 10px 0;
+}
+    .table a{
+            color: green;
+}
+    .table a:hover{
+            color: red;
+            }
+        
+</style>
+
+<body>
+    <!-- в строку: тэг а, разделители: тэг border -->
+    <div class="tag-a">
+        <a  href="a">первая ссылка</a>
+        <a  href="a">вторая ссылка</a>
+        <a  href="a">третья ссылка</a>
+        <a  href="a">четвертая ссылка</a>
+        <a  href="a">пятая ссылка</a>
+    </div>
+
+    <!-- в строку: тэг p через inline-block, разделители: тэг border -->
+<div class="tag-p">
+    <p><a  href="a">первая ссылка</a></p>
+    <p><a  href="a">вторая ссылка</a></p>
+    <p><a  href="a">третья ссылка</a></p>
+    <p><a  href="a">четвертая ссылка</a></p>
+    <p><a  href="a">пятая ссылка</a></p>
+</div>
+
+    <!-- в строку: table, разделители: border table -->
+<div class="table">
+    <table>
+    <tr>
+        <td><a  href="a">первая ссылка</a></td>
+        <td><a  href="a">вторая ссылка</a></td>
+        <td><a  href="a">третья ссылка</a></td>
+        <td><a  href="a">четвертая ссылка</a></td>
+        <td><a  href="a">пятая ссылка</a></td>
+      </tr>
+    </table>
+</div>
+
+
+
+
+</body>
+</html>

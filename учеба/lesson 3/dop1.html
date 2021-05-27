@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    
+    <h2 align="center">DOP/1</h2><hr>
+    
+    <p style="font-size: 20px; text-indent: 1cm">
+        Почему цвет <span style="border: 4px double black; background: rgb(255, 255, 255); padding: 10px;"><font color="#BruceWillis"> #BruceWillis </font></span> является цветом <span style="border: 4px double black; background: rgb(255, 255, 255); padding: 10px;"><font color="#B0E000"> #B0E000 </font></span>?
+    </p>
+        <ol style="line-height: 150%">
+            <li>Заменяем все неправильные шестнадцатеричные символы нулями 0, BruceWillis превращается в B00CE000000</li>
+            <li>“Добиваем” число нулями до количества знаков, делимого на 3 (11 -> 12), получаем B00C E000 0000</li>
+            <li>Разбиваем на три группы, каждая из которых отвечает за одну компоненту RGB: RGB (B00C, E000, 0000)</li>
+            <li>Обрезаем каждый из аргументов справа, оставляя 2 символа, и получаем наш результат RGB (B0, E0, 00) = #B0E000</li>
+        </ol><br>
+
+        <p style="font-size: 20px; text-indent: 1cm">
+            Почему цвет <span style="border: 4px double black; background: rgb(255, 255, 255); padding: 10px;"><font color="#CANDY"> #CANDY </font></span> является цветом <span style="border: 4px double black; background: rgb(255, 255, 255); padding: 10px;"><font color="#CA0000"> #CA0000 </font></span>?
+        </p>
+
+    <ol style="line-height: 150%">
+        <li>Заменяем все неправильные шестнадцатеричные символы нулями 0, CANDY превращается в CA0D0000000</li>
+        <li>“Добиваем” число нулями до количества знаков, делимого на 3 (11 -> 12), получаем CA0D 0000 0000</li>
+        <li>Разбиваем на три группы, каждая из которых отвечает за одну компоненту RGB: RGB (CA0D, 0000, 0000)</li>
+        <li>Обрезаем каждый из аргументов справа, оставляя 2 символа, и получаем наш результат RGB (CA, 00, 00) = #CA0000</li>
+    </ol>
+
+<div style="height:100%; background-color: #ddddfa"><font color="black">
+    <h2 align="center">DOP/2</h2><hr>
+    
+    
+    <p style="font-size: 20px; text-indent: 1cm";> Палитра состоит из 216 безопасных веб-цветов. Под каждым цветом указаны два значения — RGB, для создания цвета в графическом редакторе, и его шестнадцатеричных HEX-код, для обозначения цвета в HTML.</p><hr><br>
+    <h3 align="center">Актуальность WEB SAFE палитры:</h3>
+    <ul style="line-height: 150%"><li> Безопасные цвета всегда неизменны при переходе от одного браузера к другому, от одного монитора к другому, или от одной платформы к другой, с их различными разрешениями и возможностями цветопередачи.</li>
+        <li>Если ваш веб-сайт имеет какой-либо цветной фон, то лучше всего для этой цели использовать именно Web Safe цвета. Таким образом, это гарантирует вам, что цвет не будет смущать пользователя при отображении на разных компьютерных платформах.</li>
+        <li>Даже старые компьютеры будут представлять  ресурс точно и без колебаний и различий в цветах.</li>
+        <li>Если Вы создаете картинки, то следует обратиться к WEB SAFE палитре, так как это позволит получать более чистое изображение, отображаемое и для вас, и для пользователя одинаково.</li>
+    </ul>
+</font></div>
+</body>
+</html>
