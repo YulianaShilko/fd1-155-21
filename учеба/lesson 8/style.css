@@ -1,0 +1,73 @@
+
+*{margin: 0;
+padding: 0;}
+
+.huy{
+    padding: 10px;
+    background-color: lightgreen;
+    border: solid green 1px;
+    position: fixed;
+    right: 5mm;
+    top: 5mm;
+    width: 70px;
+    text-align: center;
+}
+
+.header{
+    text-align:center; 
+    padding: 20px; 
+    background-color: #add8e6; 
+    font-weight: bold;
+}
+.total-content{
+    background-image: url('ine.png'); 
+    background-repeat: repeat-y;
+}
+.menu{
+    width: 200px; 
+    float: left;
+    
+}
+.content{
+    margin-left: 200px; 
+    background:
+            url('ball.jpeg') repeat-y right top;
+}
+.footer{
+    clear: both; 
+    text-align:center; 
+    padding: 20px; 
+    background-color: #add8e6; 
+    font-weight: bold;
+}
+.menu h1{
+    text-align:center; 
+    padding: 15px;
+}
+.menu ul{
+    margin-left: 30px; 
+    padding: 15px
+}
+.content h1{
+    text-align:center;  
+}
+.content img{
+    float: left; margin-left: 10px; padding-right: 20px;
+}
+.content p{
+    margin-left: 10px;
+}
+
+.clearfix::after{
+    content:'';
+    display: block;
+    clear:both;
+}
+
+
+
+
+
+
+
+

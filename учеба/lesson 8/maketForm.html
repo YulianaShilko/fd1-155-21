@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+           textarea{ width: 90%;
+           }
+           input, select{
+               margin-bottom: 10px;
+               
+           }
+           input[name="nameOfChapter"]{
+            width: 90%;
+           }
+             input[name="answer"] {
+                margin-left: 30px;
+            }
+            select[name="typeOfComp"] {
+                margin-left: 57px;
+                width: 75%;
+            }
+            .public{
+                    display: inline;
+                }
+            .comp{
+                    display: inline-block;
+                }
+
+            @media all  and (max-width:527px){
+                
+                select[name="typeOfComp"] {
+                margin-left: 0px;
+                width: 150px;
+                }
+                input[name="answer"] {
+                margin-left: 0px;
+                
+                }
+                .public{
+                    display: -webkit-box;
+                }
+                .comp{
+                    display: block;
+                    
+                }
+                
+            } 
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="form">
+        <p>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p>
+        <form action="http://fe.it-academy.by/TestForm.php">
+        <label>Название статьи:
+            <input type="text" name="nameOfChapter" >
+        </label>
+        <br>
+        <label>Рубрика:
+            <div class="comp">
+                <select name="typeOfComp">
+                    <option value="1">компьютерная техника</option>
+                    <option value="2">графика и дизайн</option>
+                    <option value="3" selected="selected">программирование</option>
+                </select>
+            </div>    
+        </label>
+        <div>
+            <label>Публикация:
+                <div class="public" >
+                    <input type="radio" name="answer" value="syte" >на сайте
+                </div>
+                <div class="public" >
+                    <input type="radio" name="answer" value="journal">журнале
+                </div>
+                <div class="public" >
+                    <input type="radio" name="answer" value="both">на сайте и в журнале
+                </div>
+            </label>
+        </div>    
+        
+        <label>Разрешить комментарии:
+            <input type="checkbox" name="comment" checked><br>
+        </label>
+        
+        <label>Текст статьи:<br>
+            <textarea name="mytext"></textarea>
+        </label>
+        <br>
+        <input type="submit" value="Опубликовать">
+        </form>
+     </div>   
+</body>
+</html>
