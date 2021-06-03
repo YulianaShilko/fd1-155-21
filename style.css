@@ -77,9 +77,6 @@ cursor: pointer;
     margin-left: 20px;
     font-size: 15px;
 }
-.header-top ul li:hover{
-    box-shadow: -5px 15px 27px rgb(0 0 0 / 5%);
-}
 .header-top .liPink{
     color: palevioletred
 }
@@ -192,7 +189,6 @@ cursor: pointer;
 .header-search img{
     margin-right: 26px;
     width: 25px;
-    cursor: pointer;
 }
 .clear{
     clear:both
@@ -310,17 +306,7 @@ input[id="checkMenuSaleMore"]:checked~.menuSaleMore{
     font-family: 'GothamRounded-Medium'; 
     font-size: 20px; 
     background: transparent;
-    cursor:pointer;
 }
-.fone .container-fone button:hover{
-    color: #fff;
-    background: #3C4B55;
-    opacity: 0.8;
-    transition: .9s;
-}
-
-
-
 /* Путь */
 .theWay ul{
     padding-top: 20px;
@@ -358,7 +344,6 @@ input[id="checkMenuSaleMore"]:checked~.menuSaleMore{
 .filter-titel-list{
 	display: none;
     padding-bottom: 20px;
-    position: relative;
 }
 input[id="arrow"]:checked~.filter-titel-list{
 	display: block;
@@ -435,37 +420,11 @@ input[id="arrow-brand-less"]~.filter-titel-list{
     padding-top: 25px;
 }
 
-.searchColorHover{
-    position: relative;
-    height: 108px;
-
-}
-.search-color figure{   
+.search-color figure{
+    float:left;
     padding-right: 23px;
-    position: absolute; 
-    cursor: pointer; 
+    
 }
-.search-color figure img:hover{
-    width: 50px;
-}
-
-.search-color figure:nth-child(2){
-    right: 118px;
-}
-.search-color figure:nth-child(3){
-    right: 64px;
-}
-.search-color figure:nth-child(4){
-    right: 6px;
-}
-.search-color figure:nth-child(5){
-    bottom: -30px;
-}
-.search-color figure:last-child{
-    bottom: -50px;
-    right: 118px;
-}
-
 .search-color figcaption{
     font-size: 12px;
     text-align: center;
@@ -489,9 +448,9 @@ input[id="arrow-brand-less"]~.filter-titel-list{
 .menuGoods .squareSpan{   
     float: left;    
 }
-/* .menuGoods .squareSpan img{
+.menuGoods .squareSpan img{
     width: 30px;
-} */
+}
 
 /* #spanGoodsFilter, #squareGoodsFilter{
     display: none;
@@ -500,40 +459,9 @@ input[id="arrow-brand-less"]~.filter-titel-list{
 /* input[id="squareGoodsFilter"]:checked .containerGoods{
 	display: block;
 } */
-.containerGoods0{
-    display: none;
-    z-index: 1;
-    opacity: 0;
-}
-.containerGoods{
-    display: none;
-    z-index: 1;
-    opacity: 0;
-}
 
-
-/* .content-1, .content-2 {
-	
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	
-} */
-
-#squareGoodsFilter:checked ~ .contentFilter .containerGoods0{
-    display: block;
-    z-index: 3;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-	filter: alpha(opacity=100);
-	opacity: 1;
-	display: block;
-}
-
-#spanGoodsFilter:checked ~ .contentFilter .containerGoods {
-    display: block;
-	z-index: 4;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-	filter: alpha(opacity=100);
-	opacity: 1;
-	display: block;
+input[id="squareGoodsFilter"]:checked+.containerGoods0{
+	display: none;
 }
 
 
@@ -586,16 +514,14 @@ input[id="checksortFilter"]:checked~.sortLine{
 
 .containerGoods0{
     Width: 880px; 
-    padding-top: 20px; 
+    padding-top: 20px;
+    display: block; 
 }
 .goodsSquare{
     float: left;
     Width: 272px;
     Height: 430px;
     margin-left: 20px;
-}
-.goodsSquare:hover{
-    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
 }
 
 .topDescriptionSquare{
@@ -608,18 +534,18 @@ input[id="checksortFilter"]:checked~.sortLine{
 }
 .topDescriptionSquare span{
     position: absolute;
-    top: -286px;
-    right: 184px;
+    top: -274px;
+    right: 170px;
     border: 2px solid #F8AE94;
     border-radius: 40px;
     color: #F8AE94;
     font-size: 16px;
-    padding: 3px 9px 3px 9px;
+    padding: 7px 18px 7px 18px;
     font-family: 'GothamRounded-Medium';
 }
 .topDescriptionSquare img{
     position: absolute;
-    top: -282px;
+    top: -268px;
     right: 31px;  
 }
 .topDescriptionSquare p{
@@ -663,16 +589,6 @@ input[id="checksortFilter"]:checked~.sortLine{
     border: 0px;
     margin-top: 46px;
     margin-left: 66px;
-    cursor:pointer;
-}
-.goodsSquare button:hover{
-    width: 150px;
-    height: 54px;
-    margin-top: 36px;
-    margin-left: 56px;
-    transition: 0.5s;
-    background-color: #ee9474;
-    font-size: 20px;
 }
 
 
@@ -712,9 +628,6 @@ input[id="checksortFilter"]:checked~.sortLine{
     height: 244px;
     margin-top: 36px;
 }
-.goodsLine:hover{
-    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.199);
-}
 .goodsLine .pictureOfGoods{
     float: left;
     
@@ -722,8 +635,6 @@ input[id="checksortFilter"]:checked~.sortLine{
 .goodsLine .pictureOfGoods img{
     height: 204px;
     width: 180px;
-    margin-top: 21px;
-    margin-left: 19px;
 }
 
 .goodsLine .descriptionMenu{
@@ -765,10 +676,6 @@ input[id="checksortFilter"]:checked~.sortLine{
     color: #F8AE94;
     font-family: 'GothamRounded-Light';
     font-size: 16px;
-    cursor:pointer;
-}
-.starsGoods p:last-of-type:hover{
-    border-bottom: solid 2px #F8AE94;
 }
 .contentDescription p:first-of-type{
     padding-top: 30px;
@@ -805,7 +712,6 @@ input[id="checksortFilter"]:checked~.sortLine{
     font-family: 'GothamRounded-Book';
     text-decoration-line: line-through;
     padding-top: 6px;
-    margin-top: 4px;
 }
 
 .bottomDescription .price p{
@@ -826,17 +732,6 @@ input[id="checksortFilter"]:checked~.sortLine{
     border: 0px;
     margin-left: 20px;
     margin-top: -4px;
-    cursor:pointer;
-}
-
-.bottomDescription .price button:hover{
-    width: 150px;
-    height: 54px;
-    margin-top: -14px;
-    margin-left: 22px;
-    transition: 0.5s;
-    background-color: #ee9474;
-    font-size: 20px;
 }
 
 /* нижнее меню */
