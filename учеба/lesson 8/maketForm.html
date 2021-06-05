@@ -7,24 +7,33 @@
     <title>Document</title>
     <style>
         
-           textarea{ width: 90%;
+        
+        .nameOfChapterclass{
+            margin-left: 127px;
+            
+        }
+           textarea{ width: 97%;
            }
            input, select{
                margin-bottom: 10px;
                
            }
+           label[for="nameOfChapter1"]{
+               float: left;
+           }
            input[name="nameOfChapter"]{
-            width: 90%;
+            width: 97%;
            }
              input[name="answer"] {
                 margin-left: 30px;
             }
             select[name="typeOfComp"] {
-                margin-left: 57px;
+                margin-left: 64px;
                 width: 75%;
             }
             .public{
                     display: inline;
+                    margin-left: 3px;
                 }
             .comp{
                     display: inline-block;
@@ -47,6 +56,9 @@
                     display: block;
                     
                 }
+                .nameOfChapterclass{
+            margin-left: 0px;
+        }
                 
             } 
 
@@ -59,10 +71,14 @@
     <div class="form">
         <p>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p>
         <form action="http://fe.it-academy.by/TestForm.php">
-        <label>Название статьи:
-            <input type="text" name="nameOfChapter" >
-        </label>
-        <br>
+        
+            
+            <label for="nameOfChapter1">Название статьи:    
+            </label>
+        <div class="nameOfChapterclass">    
+            <input type="text" id="nameOfChapter1" name="nameOfChapter" >
+        </div>
+        
         <label>Рубрика:
             <div class="comp">
                 <select name="typeOfComp">
