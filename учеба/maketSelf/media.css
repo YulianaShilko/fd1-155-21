@@ -142,13 +142,13 @@ label[for="spanGoodsFilter"]{
         margin-left: 123px;
     }
     .fone .container-fone {
-        background: url(img/foneMain.jpg) no-repeat -701px -58px;
+        background: url(img/foneMain.jpg) no-repeat -656px -58px;
         height: 229px;
-        width: 320px;
+        width: 620px;
     }
     .fone .container-fone button{
-        margin-top: 94px;
-        margin-left: 12px;
+        margin-top: 92px;
+        margin-left: 51px;
         color: #fff;
     border: 3px solid #fff;
     }

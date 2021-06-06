@@ -863,8 +863,11 @@ input[id="checksortFilter"]:checked~.sortLine{
 }
 
 /* нижнее меню */
-.mainBottomMenu{
+.footer{
     background-color: #F5F9FA;
+}
+.mainBottomMenu{
+    
     padding-top: 52px;
     padding-bottom: 52px;
     margin-top: 34px;
