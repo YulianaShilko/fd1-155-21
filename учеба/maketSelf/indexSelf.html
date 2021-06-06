@@ -1,11 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="fonts/fonts2.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     
     <title>Document</title>
 </head>
@@ -16,7 +18,45 @@
             <div class="logo">
                 <p>Ski goods</p>
             </div>
-            <ul>
+            <div class="logoMore">
+                <input type="checkbox" id="snakeLogo">
+                <label for="snakeLogo">
+                    <img src="img/snake.png"  alt="">
+                </label>
+                <div class="ulLogoMore">
+                    <ul>
+                        <li><a href="#">Our Purpose</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li class="liPink"><a href="#">Join Us</a></li>
+                        <label for="ch-box-for-login">	
+                            <li class="liBold">Sign in</li> 
+                        </label>
+                        <input type="checkbox" id="ch-box-for-login">
+                        <div class="login-forma">	
+                            <div>
+                                <form action="http://fe.it-academy.by/TestForm.php" method="get">
+                                    <label for="ch-box-for-login">
+                                        <span>X</span>
+                                    </label>
+                                    <label>Username
+                                        <input type="text" name="login" required>
+                                    </label>
+                                    <label>Password
+                                        <input type="password" name="password" required><br>
+                                    </label>
+                                    <input type="submit" value="Enter">
+                                    <input type="checkbox"><p class="inline-p">REMEMBER ME</p><br>
+                                    <a href="" class="form-a"><p class="acc">Create Account?</p></a>
+                                    
+                                </form>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+            <ul class="slideMenu">
                 <li><a href="#">Our Purpose</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact Us</a></li>
@@ -640,7 +680,8 @@
                                                         <label class="stars" for="five"></label>
                                                     </div>
                                                     <p>8 review</p>   
-                                                    <p>+ Write review</p>                        
+                                                    <p>+ Write review</p> 
+                                                                          
                                                 </div>
                                                 <div class="heartGoods">
                                                     <img src="img/like.png" alt="">                                
