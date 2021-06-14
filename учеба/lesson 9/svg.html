@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fone:hover {
+            fill: black;
+        } 
+        .fone:hover + rect {
+            fill: rgb(153, 108, 25);
+        }
+        .fone:hover ~ polygon {
+            fill: rgb(153, 108, 25);
+        }
+        .fone:hover ~ .window {
+            fill: yellow;
+        }
+        
+    </style>
+</head>
+<body>
+    <div style="width: 100px; height: 1000px;">
+        <svg class="full" style="position: relative;" width="1000" height="1000" xmlns="http://www.w3.org/2000/svg">
+            <rect class="fone" x="127.92" y="79.09" width="281" height="364" stroke="black" fill="#fff" />
+            <rect class="walls" x="183.74" y="263.41" width="179.12" height="178.02" stroke="black" fill="#fff" />
+            <polygon class="roof" points="184.84,263.33 274.4,121.94 363.9,263.33" stroke="black" fill="#fff" />
+            <rect class="window" x="243.09" y="309.98" width="67" height="79" stroke="black" fill="#fff" />
+            <line x1="274.37" y1="309.98" x2="274.37" y2="378.98" stroke="black"  />
+            <line x1="246.09" y1="344.48" x2="310.09" y2="344.48" stroke="black"  />
+            <circle cx="310" cy="100" r="3" style="fill:#fff; " />
+            <circle cx="270" cy="90" r="3" style="fill:#fff; " />
+            <circle cx="240" cy="120" r="3" style="fill:#fff; " />
+            <circle cx="220" cy="100" r="3" style="fill:#fff; " />
+            <circle cx="200" cy="120" r="3" style="fill:#fff; " />
+            <circle cx="190" cy="100" r="3" style="fill:#fff; " />
+            <circle cx="170" cy="170" r="3" style="fill:#fff; " />
+            <circle cx="160" cy="180" r="3" style="fill:#fff; " />
+            <circle cx="350" cy="150" r="3" style="fill:#fff; " />
+            <circle cx="380" cy="180" r="3" style="fill:#fff; " />
+            <circle cx="390" cy="170" r="3" style="fill:#fff; " />
+            <circle cx="390" cy="120" r="3" style="fill:#fff; " />
+            <circle cx="160" cy="120" r="3" style="fill:#fff; " />
+        </svg>    
+    </div>
+
+</body>
+</html>

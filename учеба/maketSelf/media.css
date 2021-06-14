@@ -105,7 +105,13 @@ label[for="spanGoodsFilter"]{
     margin-top: 7px;
     padding-left: 124px;
 }
+.squareSpan input:checked + label + .containerGoods{
+    display: none;
+}
 
+.squareSpan input + label[for="spanGoodsFilter"]{
+    display: none;
+}
 }
 @media all  and (max-width:600px){
     .container{
@@ -164,8 +170,16 @@ label[for="spanGoodsFilter"]{
     width: 233px;
     float: left;
 }
+
 .containerGoods0{
     margin-left: 0px;
+}
+.squareSpan input:checked + label + .containerGoods{
+    display: none;
+}
+
+.squareSpan input + label[for="spanGoodsFilter"]{
+    display: none;
 }
 .goodsSquare{
     margin-left: 0px;
