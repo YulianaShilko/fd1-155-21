@@ -11,39 +11,47 @@
     *{margin: 0;
         padding: 0;}
 
-div{
+.bod1{
     display: grid;
-    grid-template-columns: 200px 1fr;
-    grid-template-rows: 50px 1fr 50px;
+    grid-template-columns: 200px  1fr;
+    grid-template-areas: "header header "
+                         "menu content"
+                         "footer footer"
 }
         .header{
-            justify-items: center; align-items: center;
-            grid-column-start: 1;
-    grid-column-end: 3;      
+    grid-area: header;
     text-align:center; 
     padding: 20px; 
     background-color: #add8e6; 
     font-weight: bold;
 }
 
+    
 
 
 .footer{
-    grid-column-start: 1;
-    grid-column-end: 3; 
+    grid-area: footer; 
     text-align:center; 
     padding: 20px; 
     background-color: #add8e6; 
     font-weight: bold;
 }
-
+.menu{
+    grid-area: menu;
+    background-color:aquamarine;
+}
+.content{
+    grid-area: content;
+}
 .menu h1{
     text-align:center; 
     padding: 15px;
 }
 .menu ul{
     margin-left: 30px; 
-    padding: 15px
+    padding: 15px;
+    list-style: none;
+    
 }
 .content h1{
     text-align:center;  
@@ -51,13 +59,55 @@ div{
 .content img{
     margin-left: 10px; 
     padding-right: 20px;
+    float: left;
 }
 .content p{
     margin-left: 10px;
 }
+
+@media all  and (max-width:560px){
+    .footer, .header{
+        display: none;
+    }
+    .bod1 {
+    grid-template-areas:    "content"
+                            "menu";
+    grid-template-columns: 1fr;
+  }
+  .content img{
+        float: none;
+    width: 90%;
+    margin-left: 31px;
+    }
+    .menu{
+        width: auto;
+        background-color: #fff;
+    }
+    
+    .menu li{
+        margin-right: 10px;
+    }
+    .menu h2{
+        margin-left: 44px;
+    }
+    .content{
+        padding-bottom: 20px;
+    }
+    .menu li {
+    display: inline-block;
+    margin: 0 10px 0 0;
+  }
+  .content p{
+    padding: 20px;
+}
+}
+
+
+
+
 </style>
 <body>
-<div>
+<div class="bod1">
     <div class="header">ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ</div>   
      
     

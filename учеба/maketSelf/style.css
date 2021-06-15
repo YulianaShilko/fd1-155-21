@@ -179,6 +179,7 @@ input[id="snakeLogo"]:checked~.ulLogoMore{
 	border: 1px solid black;
     cursor: pointer;
     border-radius: 8px;
+    font-family: 'GothamRounded-Medium';
 }
 
 .login-forma input[type="checkbox"]{
@@ -304,6 +305,7 @@ input[id="checkMenuSaleMore"]:checked~.menuSaleMore{
     background: #F5F9FA;
     border-radius: 8px;
     display: none;
+    z-index: 1;
 } 
 
 .menuTotalMore li span:hover{

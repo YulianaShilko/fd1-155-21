@@ -34,8 +34,8 @@
     .mainBottomMenu ul {
         padding-left: 75px;
     }
-    .squareSpan input:checked + label{
-        margin-left: 56px;}
+    .squareSpan input + label{
+        margin-left: 30px;}
 }
 @media all  and (max-width:920px){
 .container{
