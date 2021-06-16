@@ -2,6 +2,20 @@
     .container{
         width: 900px;
     }
+
+    .menuTotalMore > div{
+        width: 820px; 
+        height: 327px;
+    } 
+    
+.rightbottomDescriptionSquare span{
+    margin-right: 13px;
+}
+
+
+
+
+
     .container-fone{
         width: 900px;
     }
@@ -54,6 +68,14 @@
 .header-top2 {
     padding-bottom: 17px;
 }
+.menuTotalMore > div{
+    width: 600px; 
+    margin-left: -138px;
+    height: 327px;
+} 
+
+
+
 .header-search{
 margin-left: 126px;
 float: none;
@@ -127,7 +149,13 @@ label[for="spanGoodsFilter"]{
     .header-top img{
         display: block;
         margin-top: 6px;
+        cursor: pointer;
     }
+    .menuTotalMore > div{
+        width: 320px; 
+        margin-left: -138px;
+        height: 621px;
+    } 
     .slideMenu{
         display: none;
     }

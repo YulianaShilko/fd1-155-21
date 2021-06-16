@@ -268,21 +268,6 @@ img[src="img/basket-empty.jpg"]{
     display: none;
 } 
 
-/* input[id="checkMenuNewMore"]:checked~.menuNewMore{
-	display: block;
-}
-input[id="checkMenuManMore"]:checked~.menuManMore{
-	display: block;
-}
-input[id="checkMenuWomanMore"]:checked~.menuWomanMore{
-	display: block;
-}
-input[id="checkMenuKidMore"]:checked~.menuKidMore{
-	display: block;
-}
-input[id="checkMenuSaleMore"]:checked~.menuSaleMore{
-	display: block;
-} */
 
 
 
@@ -307,6 +292,8 @@ input[id="checkMenuSaleMore"]:checked~.menuSaleMore{
     display: none;
     z-index: 1;
 } 
+
+
 
 .menuTotalMore li span:hover{
     border-bottom: solid 2px palevioletred;
