@@ -137,22 +137,7 @@ label[for="spanGoodsFilter"]{
 .squareSpan input + label[for="spanGoodsFilter"]{
     display: none;
 }
-.totalName{
-padding-top: 13px;
-padding-bottom: 44px;
-}
-.containerTotalGoods{
-    width: 538px;
-    float: none;
-}
-.SearchGoods-header{
-    padding-bottom: 81px;
-}
-.containerGoods0{
-    margin-left: -34px;
-    float: none;
-    width: 600px;
-}
+
 }
 @media all  and (max-width:600px){
     .container{
@@ -234,7 +219,9 @@ padding-bottom: 44px;
     float: left;
 }
 
-
+.containerGoods0{
+    margin-left: 0px;
+}
 .squareSpan input:checked + label + .containerGoods{
     display: none;
 }
@@ -243,7 +230,7 @@ padding-bottom: 44px;
     display: none;
 }
 .goodsSquare{
-    margin-left: 38px;
+    margin-left: 0px;
 }
 
 .mainBottomMenu ul:first-child{
@@ -261,23 +248,7 @@ padding-bottom: 44px;
     width: 320px;
     
 }
-.totalName{
-    padding-top: 13px;
-    padding-bottom: 44px;
-    }
-    .containerTotalGoods{
-        width: 233px;
-        float: left;
-        margin-left: 0px;
-    }
-    .SearchGoods-header{
-        padding-bottom: 48px;
-    }
-    .containerGoods0{
-        margin-left: -34px;
-        float: none;
-        width: 327px;
-    }
+
 
 
 
