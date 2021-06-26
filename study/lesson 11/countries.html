@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type='button' value='ввод информации о стране' onclick='putInfoCountry()' >
+<br>
+
+<input type='button' value='получение информации о стране' onclick='getInfoCountry()'>
+<br>
+
+<input type='button' value='перечень всех стран' onclick='fullInfoCountry()'>
+<br>
+
+<input type='button' value='удаление информации о стране' onclick='deleteInfoCountry()'>
+
+
+<script>
+
+var infoCountry={ };
+
+
+let countryName ;
+let capitalName ;
+let countryNameCheck ;
+let delCountry;
+
+function putInfoCountry(){   
+   countryName=prompt('Введите название страны?: ');
+   capitalName=prompt('Введите название столицы?: ');  
+   infoCountry[countryName]=capitalName; 
+}
+  
+function getInfoCountry(){
+        countryNameCheck=prompt('Проверим, есть ли такая страна?: ');
+   if   (countryNameCheck==countryName)
+        alert ('страна: ' + countryName + ' столица: ' + infoCountry[countryName] );
+   else
+        alert( 'нет информации о стране ' + countryName + '!' );
+}   
+   
+function fullInfoCountry(){
+   for ( var CN in infoCountry )
+        console.log( 'страна: ' + CN + ' столица: ' + infoCountry[CN] );
+}
+function deleteInfoCountry(){
+    delCountry = prompt('Какую страну удалить?: ');
+    if   (delCountry==countryName)
+        delete infoCountry[delCountry];
+    else
+        alert( 'нет информации о стране в хэше !' );
+}
+
+</script>
+
+</body>
+</html>

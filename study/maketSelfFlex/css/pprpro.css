@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+li {
+  list-style-type: none; }
+
+h3 {
+  font-size: 26px; }
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: #000000; }
+
+.container {
+  width: 1120px;
+  margin: 0 auto; }
+
+header {
+  height: 168px;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-size: 14px; }
+  header .header-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 14px; }
+    header .header-top .header-left {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding-right: 50px; }
+      header .header-top .header-left select {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 31px;
+        padding: 4px 8px;
+        color: #FFFFFF; }
+        header .header-top .header-left select option {
+          color: #000000; }
+      header .header-top .header-left a {
+        margin-left: 18px; }
+    header .header-top ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      header .header-top ul li {
+        margin-right: 26px;
+        -webkit-text-decoration-line: underline;
+                text-decoration-line: underline;
+        color: #99938A; }
+  header .header-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 30px; }
+    header .header-bottom .header-bottom-left {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      header .header-bottom .header-bottom-left button {
+        font-size: 18px;
+        width: 148px;
+        height: 46px;
+        background: #FADE4B;
+        border-radius: 8px; }
+      header .header-bottom .header-bottom-left h3 {
+        margin-left: 30px;
+        margin-right: 48px; }
+      header .header-bottom .header-bottom-left > div {
+        position: relative; }
+        header .header-bottom .header-bottom-left > div input {
+          border-radius: 60px;
+          background-color: #404040;
+          width: 459px;
+          height: 56px;
+          line-height: 19px;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          color: #FFFFFF;
+          padding-left: 21px; }
+        header .header-bottom .header-bottom-left > div label {
+          position: absolute;
+          bottom: 0;
+          right: 23px; }
+    header .header-bottom .header-bottom-right {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      header .header-bottom .header-bottom-right .adress {
+        position: relative;
+        margin-left: 48px;
+        margin-right: 52px; }
+        header .header-bottom .header-bottom-right .adress > div {
+          position: relative;
+          width: 24px;
+          height: 30px; }
+          header .header-bottom .header-bottom-right .adress > div svg {
+            position: absolute; }
+            header .header-bottom .header-bottom-right .adress > div svg:first-child {
+              right: -9px; }
+            header .header-bottom .header-bottom-right .adress > div svg:last-child {
+              bottom: 9px;
+              right: -1px; }
+        header .header-bottom .header-bottom-right .adress figcaption {
+          position: absolute;
+          bottom: 0; }
+      header .header-bottom .header-bottom-right .enter {
+        position: relative; }
+        header .header-bottom .header-bottom-right .enter > div {
+          position: relative;
+          width: 24px;
+          height: 24px; }
+          header .header-bottom .header-bottom-right .enter > div svg {
+            position: absolute; }
+            header .header-bottom .header-bottom-right .enter > div svg:first-child {
+              right: 0px; }
+            header .header-bottom .header-bottom-right .enter > div svg:last-child {
+              bottom: 0;
+              right: -6px; }
+        header .header-bottom .header-bottom-right .enter figcaption {
+          position: absolute;
+          bottom: 0; }
+      header .header-bottom .header-bottom-right .basket {
+        position: relative;
+        margin-left: 48px; }
+        header .header-bottom .header-bottom-right .basket > div {
+          position: relative;
+          width: 30px;
+          height: 24px; }
+          header .header-bottom .header-bottom-right .basket > div svg {
+            position: absolute; }
+            header .header-bottom .header-bottom-right .basket > div svg:first-child {
+              right: -11px; }
+            header .header-bottom .header-bottom-right .basket > div svg:nth-child(2) {
+              bottom: -8px;
+              right: 5px; }
+            header .header-bottom .header-bottom-right .basket > div svg:last-child {
+              bottom: -8px;
+              right: -8px; }
+        header .header-bottom .header-bottom-right .basket figcaption {
+          position: absolute;
+          bottom: 0; }
+
+.slider {
+  height: 360px; }
+  .slider .sliderA {
+    position: relative;
+    text-align: center; }
+    .slider .sliderA input {
+      display: none; }
+      .slider .sliderA input label {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 8px;
+        background: rgba(90, 90, 90, 0.8);
+        border: 2px solid rgba(190, 190, 190, 0.8);
+        cursor: pointer;
+        z-index: 100;
+        position: relative;
+        margin-right: 4px;
+        top: 90%;
+        -webkit-transition: background 0.8s ease-out 0s;
+        transition: background 0.8s ease-out 0s; }
+        .slider .sliderA input label > div {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          bottom: 0px;
+          z-index: 0;
+          visibility: hidden;
+          opacity: 0;
+          -webkit-transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+          transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s; }
+    .slider .sliderA input:checked label > div {
+      visibility: visible;
+      opacity: 1;
+      -webkit-transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+      transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s; }
+
+/*# sourceMappingURL=pprpro.css.map */

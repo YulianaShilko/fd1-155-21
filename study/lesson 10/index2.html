@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var lastName=prompt('Введите вашу фамилию:');
+        var name=prompt('Введите ваш имя:');
+        var middleName=prompt('Введите ваш отчество:');
+
+        
+        var age=parseInt(prompt('Введите ваш возраст в годах:'));
+        var ageFuture = age + 5;
+        
+        var pol;
+        var pen;
+        var pens;
+
+        var gender = confirm("Is you a man?") 
+        gender?pol = 'мужской':pol = 'женский' ;
+        gender?pens = 65:pens = 60 ;
+        pens ==65&&age>=pens || pens ==60 &&age>=pens?pen='да':pen = 'нет';
+
+
+        
+
+
+        alert( 'Ваше ФИО: ' + lastName + name + middleName + 
+                '\nВаш возраст: ' + age + 
+                '\nваш возраст в днях: ' + age*365 +
+                '\nчерез 5 лет вам будет: ' + ageFuture +
+                '\nваш пол: ' + pol +
+                '\nвы на пенсии: ' + pen);
+
+
+
+
+    </script>
+</body>
+</html>

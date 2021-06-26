@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/pprpro.css">
+    <title>Document</title>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="header-top">
+            <div class="header-left">
+                <form method="get" action="town.php">
+                    <select name="townname">
+                        <option value="2">Брест</option>
+                        <option value="3">Витебск</option>
+                        <option value="4" selected>Минск</option>
+                        <option value="5" >Могилев</option>
+                        <option value="6" >Гродно</option>
+                        <option value="7" >Гомель</option>
+                    </select>
+                </form>
+                <a href="tel:+375297072788">+375 (29) 7072788</a>
+                <a href="tel:+375337072788">+375 (33) 7072788</a>
+            </div>
+    
+            <ul>
+                <li><a href="#">Фотомагазин</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Трейд-ин</a></li>
+            </ul>
+        </div>
+        <div class="header-bottom">
+            <div class="header-bottom-left">
+                <button>
+                    <p>Категория</p>
+                </button>
+                <h3>Photomarket</h3>
+                <div>
+                    <label for="name">
+                        <img src="img/loopa.png" alt="loopa">
+                    </label>
+                    <input id="name" type="text" placeholder="Я ищу...">
+                </div>
+            </div>
+            <div class="header-bottom-right">
+                <figure class="adress">
+                    <div>
+                        <svg width="26" height="32" viewBox="0 0 26 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25 13.333C25 22.6663 13 30.6663 13 30.6663C13 30.6663 1 22.6663 1 13.333C1 10.1504 2.26428 7.09816 4.51472 4.84773C6.76516 2.59729 9.8174 1.33301 13 1.33301C16.1826 1.33301 19.2348 2.59729 21.4853 4.84773C23.7357 7.09816 25 10.1504 25 13.333Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 9.33301C7.20914 9.33301 9 7.54215 9 5.33301C9 3.12387 7.20914 1.33301 5 1.33301C2.79086 1.33301 1 3.12387 1 5.33301C1 7.54215 2.79086 9.33301 5 9.33301Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>    
+                    <figcaption>Адрес</figcaption>
+                 </figure>
+
+                <figure class="enter">
+                    <div>
+                        <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.00008 11.6667C9.9456 11.6667 12.3334 9.27885 12.3334 6.33333C12.3334 3.38781 9.9456 1 7.00008 1C4.05456 1 1.66675 3.38781 1.66675 6.33333C1.66675 9.27885 4.05456 11.6667 7.00008 11.6667Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <svg width="24" height="10" viewBox="0 0 24 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.6666 9V6.33333C22.6666 4.91885 22.1047 3.56229 21.1045 2.5621C20.1043 1.5619 18.7477 1 17.3333 1H6.66658C5.2521 1 3.89554 1.5619 2.89535 2.5621C1.89515 3.56229 1.33325 4.91885 1.33325 6.33333V9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>    
+                    <figcaption>Войти</figcaption>
+                </figure>
+
+                <figure class="basket">
+                    <div>
+                        <svg width="32" height="23" viewBox="0 0 32 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.33325 1.33301H6.66658L10.2399 19.1863C10.3618 19.8002 10.6958 20.3516 11.1833 20.7441C11.6708 21.1365 12.2808 21.345 12.9066 21.333H25.8666C26.4923 21.345 27.1023 21.1365 27.5899 20.7441C28.0774 20.3516 28.4113 19.8002 28.5332 19.1863L30.6666 7.99967H7.99992" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.00008 4.33366C3.73646 4.33366 4.33341 3.73671 4.33341 3.00033C4.33341 2.26395 3.73646 1.66699 3.00008 1.66699C2.2637 1.66699 1.66675 2.26395 1.66675 3.00033C1.66675 3.73671 2.2637 4.33366 3.00008 4.33366Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.00008 4.33366C3.73646 4.33366 4.33341 3.73671 4.33341 3.00033C4.33341 2.26395 3.73646 1.66699 3.00008 1.66699C2.2637 1.66699 1.66675 2.26395 1.66675 3.00033C1.66675 3.73671 2.2637 4.33366 3.00008 4.33366Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
+                    </div>    
+                    <figcaption>Корзина</figcaption>
+                 </figure>
+
+            </div>
+        </div>    
+    </div>
+</header>
+
+<div class="slider">
+    <div class="container">
+        <div class="sliderA">
+            <input type="radio" name="slider" id="slider1_1" checked="checked">
+            <label for="slider1_1"></label>
+                <div>
+                    <h2>Шедевры в деталях вместе с Nikon Z7II</h2>
+                    <p>Представляем совершенно новую фотокамеру Z 7II</p>
+                    <button>Узнать больше</button>
+                </div>
+
+            <label for="slider1_2"></label> 
+
+            <input type="radio" name="slider" id="slider1_2">
+            <label for="slider1_2"></label>
+                <div>
+                    <img src="img/anfield.jpg">
+                </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
