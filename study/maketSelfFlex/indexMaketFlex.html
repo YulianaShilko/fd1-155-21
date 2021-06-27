@@ -7,8 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/pprpro.css">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/pprpro.css"> 
   
     <title>Document</title>
 </head>
@@ -124,7 +123,6 @@
             <input type="radio" name="slider" id="slider1_2">
             <label for="slider1_2"></label>
             <div class="sliderA-2" style="background: url('img/sliderB1.jpg') no-repeat center;">
-                    <!-- <img src="img/anfield.jpg"> -->
             </div>
         </div>
     </div>
@@ -407,71 +405,8 @@
     </div>
 </footer>
 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="main.js"></script>
 
-
-<script>
-    $outer_container=$("#outer_container");
-$thumbScroller=$("#thumbScroller");
-$thumbScroller_container=$("#thumbScroller .container1");
-$thumbScroller_content=$("#thumbScroller .content");
-$thumbScroller_thumb=$("#thumbScroller .thumb");
- 
-var sliderWidth=$thumbScroller.width();
-var itemWidth=$thumbScroller_content.width();
- 
-$thumbScroller_content.each(function (i) {
-    totalContent=i*itemWidth;   
-    $thumbScroller_container.css("width",totalContent+itemWidth);
-});
- 
-$thumbScroller.mousemove(function(e){
-    var mouseCoords=(e.pageX - this.offsetLeft);
-      var mousePercentY=mouseCoords/sliderWidth;
-      var destY=-(((totalContent-(sliderWidth-itemWidth))-sliderWidth)*(mousePercentY));
-      var thePosA=mouseCoords-destY;
-      var thePosB=destY-mouseCoords;
-      if(mouseCoords==destY){
-        $thumbScroller_container.stop();
-      }
-      if(mouseCoords>destY){
-        $thumbScroller_container.css("left",-thePosA);
-      }
-      if(mouseCoords<destY){
-        $thumbScroller_container.css("left",thePosB);
-      }
-});
- 
-var fadeSpeed=300;
- 
-$thumbScroller_thumb.each(function () {
-    var $this=$(this);
-    $this.fadeTo(fadeSpeed, 0.5);
-});
- 
-$thumbScroller_thumb.hover(
-    function(){ //mouse over
-        var $this=$(this);
-        $this.stop().fadeTo(fadeSpeed, 1);
-    },
-    function(){ //mouse out
-        var $this=$(this);
-        $this.stop().fadeTo(fadeSpeed, 0.5);
-    }
-);
-
-
-let content = document.getElementById("present1")
-let show = document.getElementById("showContent")
-
-show.addEventListener("click", () => {
-  if (content.style.display === "block") {
-    content.style.display = "none"
-    show.value = 'Показать еще'
-  } else {
-    content.style.display = "block"
-    show.value = 'Скрыть'
-  }
-})
-</script>
 </body>
 </html>
