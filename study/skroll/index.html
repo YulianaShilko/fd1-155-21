@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        #outer_container{
+            margin:60px auto; padding:0 10px; }
+        #thumbScroller{
+            position:relative; margin:auto;}
+        #thumbScroller, #thumbScroller .container, #thumbScroller .content{height:170px;}
+        #thumbScroller{
+            overflow:hidden;}
+        #thumbScroller .container{
+            position:relative; left:0;}
+        #thumbScroller .content{
+            float:left;}
+        #thumbScroller .content div{
+            padding:10px 15px; height:100%;}
+        
+    </style>
+
+</head>
+<body>
+    <div id="outer_container">
+        <div id="thumbScroller">
+            <div class="container">
+                <div class="content">
+                    <div><a href="#"><img src="../maketSelfFlex/img/skroll1.png" title="Дорога" alt="Дорога" class="thumb" /></a></div>
+                </div>
+                <div class="content">
+                    <div><a href="#"><img src="../maketSelfFlex/img/skroll2.png" title="Цветок" alt="Цветок" class="thumb" /></a></div>
+                </div>
+                <div class="content">
+                    <div><a href="#"><img src="../maketSelfFlex/img/skroll3.png" title="Сумерки" alt="Сумерки" class="thumb" /></a></div>
+                </div>
+                <div class="content">
+                    <div><a href="#"><img src="../maketSelfFlex/img/skroll4.png" title="Водопад" alt="Водопад" class="thumb" /></a></div>
+                </div>
+                <div class="content">
+                    <div><a href="#"><img src="../maketSelfFlex/img/skroll5.png" title="Каньон" alt="Каньон" class="thumb" /></a></div>
+                </div>
+                <div class="content">
+                    <div><a href="#"><img src="../maketSelfFlex/img/skroll6.png" title="Дорога" alt="Дорога" class="thumb" /></a></div>
+                </div>
+                <div class="content">
+                    <div><a href="#"><img src="../maketSelfFlex/img/skroll7.png" title="Лес" alt="Лес" class="thumb" /></a></div>
+                </div>
+                <div class="content">
+                    <div><a href="#"><img src="../maketSelfFlex/img/skroll8.png" title="Лес" alt="Лес" class="thumb" /></a></div>
+                </div>
+                <div class="content">
+                    <div><a href="#"><img src="../maketSelfFlex/img/skroll9.png" title="Лес" alt="Лес" class="thumb" /></a></div>
+                </div>
+                <div class="content">
+                    <div><a href="#"><img src="../maketSelfFlex/img/skroll10.png" title="Лес" alt="Лес" class="thumb" /></a></div>
+                </div>
+                <div class="content">
+                    <div><a href="#"><img src="../maketSelfFlex/img/skroll11.png" title="Лес" alt="Лес" class="thumb" /></a></div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+<script>
+    $outer_container=$("#outer_container");
+$thumbScroller=$("#thumbScroller");
+$thumbScroller_container=$("#thumbScroller .container");
+$thumbScroller_content=$("#thumbScroller .content");
+$thumbScroller_thumb=$("#thumbScroller .thumb");
+ 
+var sliderWidth=$thumbScroller.width();
+var itemWidth=$thumbScroller_content.width();
+ 
+$thumbScroller_content.each(function (i) {
+    totalContent=i*itemWidth;   
+    $thumbScroller_container.css("width",totalContent+itemWidth);
+});
+ 
+$thumbScroller.mousemove(function(e){
+    var mouseCoords=(e.pageX - this.offsetLeft);
+      var mousePercentY=mouseCoords/sliderWidth;
+      var destY=-(((totalContent-(sliderWidth-itemWidth))-sliderWidth)*(mousePercentY));
+      var thePosA=mouseCoords-destY;
+      var thePosB=destY-mouseCoords;
+      if(mouseCoords==destY){
+        $thumbScroller_container.stop();
+      }
+      if(mouseCoords>destY){
+        $thumbScroller_container.css("left",-thePosA);
+      }
+      if(mouseCoords<destY){
+        $thumbScroller_container.css("left",thePosB);
+      }
+});
+ 
+var fadeSpeed=300;
+ 
+$thumbScroller_thumb.each(function () {
+    var $this=$(this);
+    $this.fadeTo(fadeSpeed, 0.5);
+});
+ 
+$thumbScroller_thumb.hover(
+    function(){ //mouse over
+        var $this=$(this);
+        $this.stop().fadeTo(fadeSpeed, 1);
+    },
+    function(){ //mouse out
+        var $this=$(this);
+        $this.stop().fadeTo(fadeSpeed, 0.5);
+    }
+);
+</script>        
+</body>
+</html>
