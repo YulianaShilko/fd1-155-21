@@ -173,7 +173,7 @@ input[id="snakeLogo"]:checked~.ulLogoMore{
 	margin: 10px;
 	border-radius: 8px;
 }
-.login-forma [type="submit"]{
+.login-forma input[type="submit"]{
 	background: 
     #add8e6;
 	border: 1px solid black;

@@ -1,0 +1,159 @@
+
+
+@import "variables";
+
+
+@media all  and (max-width:1200px){
+    .container{
+        width: 900px;
+    }
+
+    header .header-bottom .header-bottom-left > div input{
+        width: 252px;
+    }
+    .slider .sliderA .sliderA-1 h2{
+        margin-right: 302px;
+    }
+    .slider .sliderA .sliderA-1 button{
+        margin-right: 336px;
+    }
+    .slider .sliderA .sliderA-1 p{
+        margin-right: 329px;
+    }
+    .sale .container .goodsSale{
+        width: 281px;
+    }
+    .sale .container .goodsSale img{
+        margin-left: 55px;
+    }
+    .sale .container .goodsSale img{
+        right: 10px;
+        top: 171px;
+    }
+    .sale .container .goodsSale .percent{
+        left: 173px;
+        top: 178px;
+    }
+    .hits .container ul li:nth-child(1) {
+        margin-right: 0px; }
+      .hits .container ul li:nth-child(2) {
+        margin-right: 0px; }
+      .hits .container ul li:nth-child(3) {
+        margin-right: 0px; }
+      .hits .container ul li:nth-child(4) {
+        margin-right: 0px; }
+      .hits .container ul li:nth-child(6) {
+        margin-right: 0px; }
+      .hits .container ul li:nth-child(7) {
+        margin-right: 0px; }
+      .hits .container ul li:nth-child(8) {
+        margin-right: 0px; }
+      .hits .container ul li:nth-child(9) {
+        margin-right: 0px; }
+        .hits .container ul li{
+                width: 180px;
+        }
+
+        .view .container div figure img{
+                width: 284px;
+        }
+}
+
+@media all  and (max-width:924px){
+        .container{
+                width: 500px;
+        }
+        header{
+                padding-bottom: -10px;
+        }
+        .bottomMenu{
+                display: block;
+        }
+        header .header-top, header .header-bottom .header-bottom-right, header .header-bottom .header-bottom-left button{
+                display: none;
+        }
+        header .header-bottom .header-bottom-left{
+                display: block;
+        }
+        header .header-bottom .header-bottom-left > div input{
+                background-color: #EEEEEE;
+                margin-top: 17px;
+                width: 500px;
+        }
+        header .header-bottom .header-bottom-left h3{
+                font-size: 36px;
+        }
+        .slider .container .sliderA .sliderA-1{
+                background-size: 704px 255px;
+        }
+        .slider .sliderA .sliderA-1 h2{
+                width: 319px;
+                font-size: 20px;
+        }
+        .slider .sliderA .sliderA-1 p{
+                width: 319px;
+        }
+        .slider .sliderA .sliderA-1 button{
+                margin-right: 217px;
+        }
+        .sale .container .goodsSale{
+                width: 226px;
+        }
+
+        .sale .container .goodsSale:nth-child(1){
+                display: none;
+        }
+        .sale .container .goodsSale p{
+                font-size: 14px;
+        }
+        .sale .container .goodsSale svg{
+                right: 10px;
+                top: 188px;
+                width: 80px;
+                height: 80px;
+        }
+        .sale .container .goodsSale .percent{
+                left: 153px;
+                top: 209px;
+        }
+        .sale .container .goodsSale img{
+                margin-left: 32px;
+        }
+        .hits .container ul li{
+                width: 249px;
+        }
+        .hits .container #showContent{
+                margin-left: 135px;
+        }
+        .view .container div{
+                flex-direction: column;
+                align-items: center;
+        }
+        footer .container .colomns ul li{
+                font-size: 11px;
+        }
+}
+@media all  and (max-width:530px){
+        .container{
+                width: 320px;
+        }
+        header .header-bottom .header-bottom-left > div input{
+                background-color: #EEEEEE;
+                margin-top: 17px;
+                width: 320px;
+        }
+        .slider .sliderA .sliderA-1 button{
+                margin-right: 27px;
+        }
+        .sale .container .goodsSale .percent{
+                left: 222px;
+    top: 203px;
+        }
+        .sale .container .goodsSale {
+                width: 352px;
+        }
+        .sale .container .goodsSale img{
+                margin-left: 93px;
+    margin-top: 65px;
+        }
+}

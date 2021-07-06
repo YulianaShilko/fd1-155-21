@@ -1,0 +1,17 @@
+#app{
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+#app > div{
+    width: 400px;
+    margin: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+#app > div > img{
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

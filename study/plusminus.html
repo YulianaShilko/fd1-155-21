@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="-" class="bminus">
+    <input type="text" id="counter" name="count" value="1" min="1" step="1" title="Кол-во">
+    <input type="button" value="+" class="bplus">
+<script>
+    $(document).ready(function(){
+    $('.bminus').click(function(e){
+    e.preventDefault();
+    var $this = $(this);
+    var input = $('#counter');
+    var value = parseInt(input.val());
+    if(value > 1){value = value - 1;}
+    else{value = 0;}
+    input.val(value);
+    });
+
+    $('.bplus').click(function(e){
+    e.preventDefault();
+    var $this = $(this);
+    var input = $('#counter');
+    var value = parseInt(input.val());
+    if(value < 100){value = value + 1;}
+    else{value = 100;}
+    input.val(value);
+    });
+    });
+</script>
+</body>
+</html>

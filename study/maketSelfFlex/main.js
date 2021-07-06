@@ -48,15 +48,132 @@ $thumbScroller_thumb.hover(
 );
 
 
-let content = document.getElementById("present1")
-let show = document.getElementById("showContent")
+var modalLeftMenu = document.getElementById('myModalCategory');
+var btnLeftMenu = document.getElementById("myBtn-ModalCategory");
 
-show.addEventListener("click", () => {
-  if (content.style.display === "block") {
-    content.style.display = "none"
-    show.value = 'Показать еще'
-  } else {
-    content.style.display = "block"
-    show.value = 'Скрыть'
-  }
-})
+btnLeftMenu.onclick = function() {
+    modalLeftMenu.style.display = "block";
+}
+window.onclick = function(event) {
+    if (event.target == modalLeftMenu) {
+        modalLeftMenu.style.display = "none";
+    }
+}
+var modalLeftMenuMore = document.getElementById('myleftMenuCategoryMore');
+var btnLeftMenuMore = document.getElementById("myBtn-leftMenuCategory");
+var btnLeftMenuMore1 = document.getElementById("myBtn-leftMenuCategory1");
+var btnLeftMenuMore2 = document.getElementById("myBtn-leftMenuCategory2");
+var btnLeftMenuMore3 = document.getElementById("myBtn-leftMenuCategory3");
+var btnLeftMenuMore4 = document.getElementById("myBtn-leftMenuCategory4");
+var btnLeftMenuMore5 = document.getElementById("myBtn-leftMenuCategory5");
+var btnLeftMenuMore6 = document.getElementById("myBtn-leftMenuCategory6");
+
+btnLeftMenuMore.onclick = function() {
+    modalLeftMenuMore.style.display = "block";
+    btnLeftMenuMore.style.backgroundColor = "#FADE4B";
+    btnLeftMenuMore1.style.backgroundColor= "white"; btnLeftMenuMore2.style.backgroundColor= "white"; 
+    btnLeftMenuMore3.style.backgroundColor= "white"; btnLeftMenuMore4.style.backgroundColor= "white";
+    btnLeftMenuMore5.style.backgroundColor= "white"; btnLeftMenuMore6.style.backgroundColor = "white";
+
+}
+
+btnLeftMenuMore1.onclick = function() {
+    modalLeftMenuMore.style.display = "block";
+    btnLeftMenuMore1.style.backgroundColor = "#FADE4B";
+    btnLeftMenuMore.style.backgroundColor= "white"; btnLeftMenuMore2.style.backgroundColor= "white"; 
+    btnLeftMenuMore3.style.backgroundColor= "white"; btnLeftMenuMore4.style.backgroundColor= "white";
+    btnLeftMenuMore5.style.backgroundColor= "white"; btnLeftMenuMore6.style.backgroundColor = "white";
+}
+btnLeftMenuMore2.onclick = function() {
+    modalLeftMenuMore.style.display = "block";
+    btnLeftMenuMore2.style.backgroundColor = "#FADE4B";
+    btnLeftMenuMore.style.backgroundColor= "white"; btnLeftMenuMore1.style.backgroundColor= "white"; 
+    btnLeftMenuMore3.style.backgroundColor= "white"; btnLeftMenuMore4.style.backgroundColor= "white";
+    btnLeftMenuMore5.style.backgroundColor= "white"; btnLeftMenuMore6.style.backgroundColor = "white";
+}
+btnLeftMenuMore3.onclick = function() {
+    modalLeftMenuMore.style.display = "block";
+    btnLeftMenuMore3.style.backgroundColor = "#FADE4B";
+    btnLeftMenuMore.style.backgroundColor= "white"; btnLeftMenuMore1.style.backgroundColor= "white"; 
+    btnLeftMenuMore2.style.backgroundColor= "white"; btnLeftMenuMore4.style.backgroundColor= "white";
+    btnLeftMenuMore5.style.backgroundColor= "white"; btnLeftMenuMore6.style.backgroundColor = "white";
+}
+btnLeftMenuMore4.onclick = function() {
+    modalLeftMenuMore.style.display = "block";
+    btnLeftMenuMore4.style.backgroundColor = "#FADE4B";
+    btnLeftMenuMore.style.backgroundColor= "white"; btnLeftMenuMore1.style.backgroundColor= "white"; 
+    btnLeftMenuMore2.style.backgroundColor= "white"; btnLeftMenuMore3.style.backgroundColor= "white";
+    btnLeftMenuMore5.style.backgroundColor= "white"; btnLeftMenuMore6.style.backgroundColor = "white";
+}
+btnLeftMenuMore5.onclick = function() {
+    modalLeftMenuMore.style.display = "block";
+    btnLeftMenuMore5.style.backgroundColor = "#FADE4B";
+    btnLeftMenuMore.style.backgroundColor= "white"; btnLeftMenuMore1.style.backgroundColor= "white"; 
+    btnLeftMenuMore2.style.backgroundColor= "white"; btnLeftMenuMore3.style.backgroundColor= "white";
+    btnLeftMenuMore4.style.backgroundColor= "white"; btnLeftMenuMore6.style.backgroundColor = "white";
+}
+btnLeftMenuMore6.onclick = function() {
+    modalLeftMenuMore.style.display = "block";
+    btnLeftMenuMore6.style.backgroundColor = "#FADE4B";
+    btnLeftMenuMore.style.backgroundColor= "white"; btnLeftMenuMore1.style.backgroundColor= "white"; 
+    btnLeftMenuMore2.style.backgroundColor= "white"; btnLeftMenuMore3.style.backgroundColor= "white";
+    btnLeftMenuMore4.style.backgroundColor= "white"; btnLeftMenuMore5.style.backgroundColor = "white";
+}
+
+
+var totalPhoto = document.getElementById('bigPhoto');
+var btnMiniPhoto1 = document.getElementById("miniPhoto1");
+var btnMiniPhoto2 = document.getElementById("miniPhoto2");
+var btnMiniPhoto3 = document.getElementById("miniPhoto3");
+var btnMiniPhoto4 = document.getElementById("miniPhoto4");
+
+btnMiniPhoto1.onclick = function() {
+    totalPhoto.style.background = "url('img/totalPhotoGoods.png') no-repeat center";
+
+}
+btnMiniPhoto2.onclick = function() {
+    bigPhoto.style.background = "url('img/maxiBackPhoto1.jpg') no-repeat center",
+    bigPhoto.style.backgroundSize = "50% auto";
+}
+btnMiniPhoto3.onclick = function() {
+    bigPhoto.style.background = "url('img/maxiRightPhoto1.jpg') no-repeat center";
+    bigPhoto.style.backgroundSize = "30% auto";
+}
+btnMiniPhoto4.onclick = function() {
+    bigPhoto.style.background = "url('img/maxiBackPhoto1.jpg') no-repeat center";
+    bigPhoto.style.backgroundSize = "50% auto";
+}
+
+var totalcharacteristics = document.getElementById('characteristics');
+var btnCharacteristics = document.getElementById("btnCharacteristicsShow");
+
+btnCharacteristics.onclick = function() {
+    totalcharacteristics.style.display = "block";
+    btnCharacteristics.style.backgroundColor = "#FADE4B";
+    btnDescript.style.backgroundColor= "white"; btnReview.style.backgroundColor= "white";
+    totaldescript.style.display = "none";
+    totalreview.style.display = "none";
+}
+
+var totaldescript = document.getElementById('descript');
+var btnDescript = document.getElementById("btnDescriptShow");
+
+btnDescript.onclick = function() {
+    totaldescript.style.display = "block";
+    btnDescript.style.backgroundColor = "#FADE4B";
+    btnCharacteristics.style.backgroundColor= "white"; btnReview.style.backgroundColor= "white";
+    totalcharacteristics.style.display = "none";
+    totalreview.style.display = "none";
+}
+
+var totalreview = document.getElementById('review');
+var btnReview = document.getElementById("btnReviewShow");
+
+btnReview.onclick = function() {
+    totalreview.style.display = "block";
+    btnReview.style.backgroundColor = "#FADE4B";
+    btnCharacteristics.style.backgroundColor= "white"; btnDescript.style.backgroundColor= "white";
+    totalcharacteristics.style.display = "none";
+    totaldescript.style.display = "none";
+}
+
