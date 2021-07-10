@@ -2413,78 +2413,7 @@ footer{
     padding-top: 40px;
     padding-bottom: 73px;
     .container{
-        .info{
-            display: flex;
-            justify-content: space-around;
-            height: 248px;
-            font-size: 16px;
-            padding-top: 40px;
-
-            .telephone_info{
-                width: 270px;
-                height: 200px;
-                font-size: 20px;
-                line-height: 40px;
-                box-shadow: 0 4px 53px 0 rgba(0,0,0,0.2);
-                transition: 0.3s;
-                border-radius: 5px; /* 5px rounded corners */
-                border: 2px solid black;
-                padding: 23px 10px;
-            }
-            .main_info{
-                width: 250px;
-                height: 200px;
-                box-shadow: 0 4px 53px 0 rgba(0,0,0,0.2);
-                transition: 0.3s;
-                border-radius: 5px; /* 5px rounded corners */
-                border: 2px solid black;
-                padding: 10px 10px;
-
-                .clock{
-                    font-size: 20px;
-                    font-weight: bold;
-                    line-height: 35px;
-
-                    span{
-                        font-size: 18px;
-                        font-weight: normal;
-                    }
-                }
-
-                p:nth-child(2){
-                    font-size: 20px;
-                    font-weight: bold;
-                    padding-top: 20px;
-
-                    & > span{
-                        font-size: 18px;
-                        font-weight: normal;
-                    }
-                }
-                p:nth-child(3){
-                    font-size: 20px;
-                    font-weight: bold;
-                    padding-top: 20px;
-
-                    & > span{
-                        font-size: 18px;
-                        font-weight: normal;
-                    }
-                }
-            }
-            .media_info{
-                width: 293px;
-                height: 200px;
-                font-size: 20px;
-                font-weight: bold;
-                line-height: 50px;
-                box-shadow: 0 4px 53px 0 rgba(0,0,0,0.2);
-                transition: 0.3s;
-                border-radius: 5px; /* 5px rounded corners */
-                border: 2px solid black;
-                padding: 21px 10px;
-            }
-        }
+        
     }
 }
 
