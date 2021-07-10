@@ -472,6 +472,11 @@
 }
 
 /* Goods */
+@media all  and (max-width:1200px){
+        .fullGoods .container .totalFullGoods .totalPhotoGoods{
+                background-size: 356px 356px;
+        }
+}
 @media all  and (max-width:924px){
         .fullGoods{
                 padding-bottom: 60px;
@@ -484,13 +489,16 @@
                 width: inherit;
                 height: 643px;
         }
+        .fullGoods .container .totalFullGoods .totalPhotoGoods{
+                background-size: 356px 356px;
+        }
         .fullGoods .container .totalFullGoods .totalPhotoGoods img:nth-child(2) {
                 top: 57px;
-                right: 295px; 
+                right: 274px; 
         }
               .fullGoods .container .totalFullGoods .totalPhotoGoods img:nth-child(3) {
                 top: 57px;
-                right: 170px; 
+                right: 128px; 
         }
               .fullGoods .container .totalFullGoods .totalPhotoGoods img:nth-child(4) {
                 top: 57px;
@@ -509,3 +517,65 @@
                 padding: 10px 0px;
         }
 }
+@media all  and (max-width:530px){
+        .fullGoods .container .totalFullGoods .totalPhotoGoods{
+                background-size: 356px 356px;
+        }
+        .fullGoods .container .totalFullGoods .totalPhotoGoods img:nth-child(2) {
+                top: 57px;
+                right: 172px; 
+        }
+              .fullGoods .container .totalFullGoods .totalPhotoGoods img:nth-child(3) {
+                top: 57px;
+                right: 86px; 
+        }
+              .fullGoods .container .totalFullGoods .totalPhotoGoods img:nth-child(4) {
+                top: 57px;
+                right: 19px; 
+        }
+        .fullDescription .container .fd .characteristics .mainTable tr th, .fullDescription .container .fd .characteristics .constructionTable tr th, .fullDescription .container .fd .characteristics .weightTable tr th {
+                padding-left: 3px;
+        }
+        .fullDescription .container .fd .characteristics .mainTable tr td, .fullDescription .container .fd .characteristics .constructionTable tr td, .fullDescription .container .fd .characteristics .weightTable tr td {
+                padding-left: 3px;
+        }
+        .fullDescription .container .fd .review .review1{
+                padding-left: 3px;
+        }
+        .fullDescription .container .fd ul li{
+                height: 58px;
+        }
+}
+
+/* адрес */
+@media all  and (max-width:924px){
+        .full_Info .container .info .media_info {
+                width: 167px;
+                font-size: 10px;
+        }
+        .full_Info .container .info .telephone_info{
+                font-size: 12px;
+        }
+        .full_Info .container .info .main_info .clock {
+                font-size: 12px;
+                font-weight: bold;
+                line-height: 35px; }
+                .full_Info .container .info .main_info .clock span {
+                  font-size: 10px;
+                  font-weight: normal; }
+              .full_Info .container .info .main_info p:nth-child(2) {
+                font-size: 12px;
+                font-weight: bold;
+                padding-top: 12px; }
+                .full_Info .container .info .main_info p:nth-child(2) > span {
+                  font-size: 18px;
+                  font-weight: normal; }
+              .full_Info .container .info .main_info p:nth-child(3) {
+                font-size: 12px;
+                font-weight: bold;
+                padding-top: 20px; }
+                .full_Info .container .info .main_info p:nth-child(3) > span {
+                  font-size: 10px;
+                  font-weight: normal; }
+}
+

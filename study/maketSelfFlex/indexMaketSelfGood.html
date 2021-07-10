@@ -14,138 +14,138 @@
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <div class="header-top">
-                <div class="header-left">
-                    <form method="get" action="town.php">
-                        <select name="townname">
-                            <option value="2">Брест</option>
-                            <option value="3">Витебск</option>
-                            <option value="4" selected>Минск</option>
-                            <option value="5" >Могилев</option>
-                            <option value="6" >Гродно</option>
-                            <option value="7" >Гомель</option>
-                        </select>
-                    </form>
-                    <a href="tel:+375297072788">+375 (29) 7072788</a>
-                    <a href="tel:+375337072788">+375 (33) 7072788</a>
-                </div>
-        
-                <ul>
-                    <li><a href="#">Фотомагазин</a></li>
-                    <li><a href="#">Доставка и оплата</a></li>
-                    <li><a href="#">Трейд-ин</a></li>
-                </ul>
+<header>
+    <div class="container">
+        <div class="header-top">
+            <div class="header-left">
+                <form method="get" action="town.php">
+                    <select name="townname">
+                        <option value="2">Брест</option>
+                        <option value="3">Витебск</option>
+                        <option value="4" selected>Минск</option>
+                        <option value="5" >Могилев</option>
+                        <option value="6" >Гродно</option>
+                        <option value="7" >Гомель</option>
+                    </select>
+                </form>
+                <a href="tel:+375297072788">+375 (29) 7072788</a>
+                <a href="tel:+375337072788">+375 (33) 7072788</a>
             </div>
-            <div class="header-bottom">
-                <div class="header-bottom-left">
-                    <button id="myBtn-ModalCategory">
-                        <div>
-                            <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <line x1="1" y1="1" x2="15" y2="1" stroke="black" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
-                            <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <line x1="1" y1="1" x2="15" y2="1" stroke="black" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
-                            <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <line x1="1" y1="1" x2="15" y2="1" stroke="black" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
-                        </div>
-                        <p>Категория</p>
-                    </button>
-                    <h3>Photomarket</h3>
-                    <div>
-                        <label for="name">
-                            <div class="loopa">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.16667 14.8333C11.8486 14.8333 14.8333 11.8486 14.8333 8.16667C14.8333 4.48477 11.8486 1.5 8.16667 1.5C4.48477 1.5 1.5 4.48477 1.5 8.16667C1.5 11.8486 4.48477 14.8333 8.16667 14.8333Z" stroke="grey" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.5 5.5L1.875 1.875" stroke="grey" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </div>
-                        </label>
-                        <input id="name" type="text" placeholder="Я ищу...">
-                    </div>
-                </div>
-                <div class="header-bottom-right">
-                    <figure class="logo" id="adress">
-                        <div>
-                            <svg width="26" height="32" viewBox="0 0 26 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M25 13.333C25 22.6663 13 30.6663 13 30.6663C13 30.6663 1 22.6663 1 13.333C1 10.1504 2.26428 7.09816 4.51472 4.84773C6.76516 2.59729 9.8174 1.33301 13 1.33301C16.1826 1.33301 19.2348 2.59729 21.4853 4.84773C23.7357 7.09816 25 10.1504 25 13.333Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5 9.33301C7.20914 9.33301 9 7.54215 9 5.33301C9 3.12387 7.20914 1.33301 5 1.33301C2.79086 1.33301 1 3.12387 1 5.33301C1 7.54215 2.79086 9.33301 5 9.33301Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>    
-                        <figcaption>Адрес</figcaption>
-                     </figure>
-                    <label for="ch-box-for-login">
-                    <figure class="logo" id="enter">
-                        <div>
-                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7.00008 11.6667C9.9456 11.6667 12.3334 9.27885 12.3334 6.33333C12.3334 3.38781 9.9456 1 7.00008 1C4.05456 1 1.66675 3.38781 1.66675 6.33333C1.66675 9.27885 4.05456 11.6667 7.00008 11.6667Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <svg width="24" height="10" viewBox="0 0 24 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M22.6666 9V6.33333C22.6666 4.91885 22.1047 3.56229 21.1045 2.5621C20.1043 1.5619 18.7477 1 17.3333 1H6.66658C5.2521 1 3.89554 1.5619 2.89535 2.5621C1.89515 3.56229 1.33325 4.91885 1.33325 6.33333V9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>    
-                        <figcaption>Войти</figcaption>
-                    </figure>
-                    </label>
-                    <input type="checkbox" id="ch-box-for-login">
-                    <div class="login-forma">	
-                        <div>
-                            <form action="http://fe.it-academy.by/TestForm.php" method="get">
-                                <label for="ch-box-for-login">
-                                    <span>X</span>
-                                </label>
-                                <label>Username
-                                    <input type="text" name="login" required>
-                                </label>
-                                <label>Password
-                                    <input type="password" name="password" required><br>
-                                </label>
-                                <input type="submit" value="Enter">
-                                <input type="checkbox"><p class="inline-p">REMEMBER ME</p><br>
-                                <a href="" class="form-a"><p class="acc">Create Account?</p></a>
-                                
-                            </form>
-                        </div>
-                    </div>
     
-                    <figure class="logo" id="basket">
-                        <div>
-                            <svg width="32" height="23" viewBox="0 0 32 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.33325 1.33301H6.66658L10.2399 19.1863C10.3618 19.8002 10.6958 20.3516 11.1833 20.7441C11.6708 21.1365 12.2808 21.345 12.9066 21.333H25.8666C26.4923 21.345 27.1023 21.1365 27.5899 20.7441C28.0774 20.3516 28.4113 19.8002 28.5332 19.1863L30.6666 7.99967H7.99992" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3.00008 4.33366C3.73646 4.33366 4.33341 3.73671 4.33341 3.00033C4.33341 2.26395 3.73646 1.66699 3.00008 1.66699C2.2637 1.66699 1.66675 2.26395 1.66675 3.00033C1.66675 3.73671 2.2637 4.33366 3.00008 4.33366Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3.00008 4.33366C3.73646 4.33366 4.33341 3.73671 4.33341 3.00033C4.33341 2.26395 3.73646 1.66699 3.00008 1.66699C2.2637 1.66699 1.66675 2.26395 1.66675 3.00033C1.66675 3.73671 2.2637 4.33366 3.00008 4.33366Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-    
-                        </div>    
-                        <figcaption>Корзина</figcaption>
-                     </figure>
-    
-                </div>
-            </div>    
+            <ul>
+                <li><a href="#">Фотомагазин</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Трейд-ин</a></li>
+            </ul>
         </div>
-    </header>
+        <div class="header-bottom">
+            <div class="header-bottom-left">
+                <button id="myBtn-ModalCategory">
+                    <div>
+                        <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="1" y1="1" x2="15" y2="1" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="1" y1="1" x2="15" y2="1" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="1" y1="1" x2="15" y2="1" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <p>Категория</p>
+                </button>
+                <h3 ><a href="https://yulianashilko.github.io/fd1-155-21/study/maketSelfFlex/indexMaketFlex.html"> Photomarket</a></h3>
+                <div>
+                    <label for="name">
+                        <div class="loopa">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.16667 14.8333C11.8486 14.8333 14.8333 11.8486 14.8333 8.16667C14.8333 4.48477 11.8486 1.5 8.16667 1.5C4.48477 1.5 1.5 4.48477 1.5 8.16667C1.5 11.8486 4.48477 14.8333 8.16667 14.8333Z" stroke="grey" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.5 5.5L1.875 1.875" stroke="grey" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </label>
+                    <input id="name" type="text" placeholder="Я ищу...">
+                </div>
+            </div>
+            <div class="header-bottom-right">
+                <a href="https://yulianashilko.github.io/fd1-155-21/study/maketSelfFlex/indexSelfFlexAdress.html"> <figure class="logo" id="adress">
+                    <div>
+                        <svg width="26" height="32" viewBox="0 0 26 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25 13.333C25 22.6663 13 30.6663 13 30.6663C13 30.6663 1 22.6663 1 13.333C1 10.1504 2.26428 7.09816 4.51472 4.84773C6.76516 2.59729 9.8174 1.33301 13 1.33301C16.1826 1.33301 19.2348 2.59729 21.4853 4.84773C23.7357 7.09816 25 10.1504 25 13.333Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 9.33301C7.20914 9.33301 9 7.54215 9 5.33301C9 3.12387 7.20914 1.33301 5 1.33301C2.79086 1.33301 1 3.12387 1 5.33301C1 7.54215 2.79086 9.33301 5 9.33301Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>    
+                    <figcaption>Адрес</figcaption>
+                </figure></a>
+                <label for="ch-box-for-login">
+                <figure class="logo" id="enter">
+                    <div>
+                        <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.00008 11.6667C9.9456 11.6667 12.3334 9.27885 12.3334 6.33333C12.3334 3.38781 9.9456 1 7.00008 1C4.05456 1 1.66675 3.38781 1.66675 6.33333C1.66675 9.27885 4.05456 11.6667 7.00008 11.6667Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <svg width="24" height="10" viewBox="0 0 24 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.6666 9V6.33333C22.6666 4.91885 22.1047 3.56229 21.1045 2.5621C20.1043 1.5619 18.7477 1 17.3333 1H6.66658C5.2521 1 3.89554 1.5619 2.89535 2.5621C1.89515 3.56229 1.33325 4.91885 1.33325 6.33333V9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>    
+                    <figcaption>Войти</figcaption>
+                </figure>
+                </label>
+                <input type="checkbox" id="ch-box-for-login">
+				<div class="login-forma">	
+					<div>
+						<form action="http://fe.it-academy.by/TestForm.php" method="get">
+							<label for="ch-box-for-login">
+								<span>X</span>
+							</label>
+                            <label>Username
+                                <input type="text" name="login" required>
+                            </label>
+                            <label>Password
+                                <input type="password" name="password" required><br>
+                            </label>
+							<input type="submit" value="Enter">
+							<input type="checkbox"><p class="inline-p">REMEMBER ME</p><br>
+							<a href="" class="form-a"><p class="acc">Create Account?</p></a>
+							
+						</form>
+					</div>
+				</div>
+
+                <a href="https://yulianashilko.github.io/fd1-155-21/study/maketSelfFlex/indexMaketSelfBasket.html"><figure class="logo" id="basket">
+                    <div>
+                        <svg width="32" height="23" viewBox="0 0 32 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.33325 1.33301H6.66658L10.2399 19.1863C10.3618 19.8002 10.6958 20.3516 11.1833 20.7441C11.6708 21.1365 12.2808 21.345 12.9066 21.333H25.8666C26.4923 21.345 27.1023 21.1365 27.5899 20.7441C28.0774 20.3516 28.4113 19.8002 28.5332 19.1863L30.6666 7.99967H7.99992" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.00008 4.33366C3.73646 4.33366 4.33341 3.73671 4.33341 3.00033C4.33341 2.26395 3.73646 1.66699 3.00008 1.66699C2.2637 1.66699 1.66675 2.26395 1.66675 3.00033C1.66675 3.73671 2.2637 4.33366 3.00008 4.33366Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.00008 4.33366C3.73646 4.33366 4.33341 3.73671 4.33341 3.00033C4.33341 2.26395 3.73646 1.66699 3.00008 1.66699C2.2637 1.66699 1.66675 2.26395 1.66675 3.00033C1.66675 3.73671 2.2637 4.33366 3.00008 4.33366Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
+                    </div>    
+                    <figcaption>Корзина</figcaption>
+                 </figure></a>
+
+            </div>
+        </div>    
+    </div>
+</header>
 <section class="bottomMenu">
     <div class="container">
         <div class="totalFixedMenu">
-            <div class="home">
+            <a href="https://yulianashilko.github.io/fd1-155-21/study/maketSelfFlex/indexMaketFlex.html"><div class="home">
                 <svg width="29" height="32" viewBox="0 0 29 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 11.5L14.5 1L28 11.5V28C28 28.7957 27.6839 29.5587 27.1213 30.1213C26.5587 30.6839 25.7956 31 25 31H4C3.20435 31 2.44129 30.6839 1.87868 30.1213C1.31607 29.5587 1 28.7957 1 28V11.5Z" stroke="grey" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
                 <svg width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 16V1H10V16" stroke="grey" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-            </div>
+            </div></a>
             <div class="categoryy">
                 <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line x1="1" y1="1" x2="15" y2="1" stroke="grey" stroke-width="2" stroke-linecap="round"/>
@@ -157,7 +157,7 @@
                     <line x1="1" y1="1" x2="15" y2="1" stroke="grey" stroke-width="2" stroke-linecap="round"/>
                 </svg>
             </div>
-            <figure class="basket">
+            <a href="https://yulianashilko.github.io/fd1-155-21/study/maketSelfFlex/indexMaketSelfBasket.html"><figure class="basket">
                 <div>
                     <svg width="32" height="23" viewBox="0 0 32 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1.33325 1.33301H6.66658L10.2399 19.1863C10.3618 19.8002 10.6958 20.3516 11.1833 20.7441C11.6708 21.1365 12.2808 21.345 12.9066 21.333H25.8666C26.4923 21.345 27.1023 21.1365 27.5899 20.7441C28.0774 20.3516 28.4113 19.8002 28.5332 19.1863L30.6666 7.99967H7.99992" stroke="grey" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -170,7 +170,7 @@
                     </svg>
 
                 </div>
-            </figure>
+            </figure></a>
             <label for="ch-box-for-login">
             <figure class="enter">
                 <div>
@@ -299,7 +299,7 @@
 <section class="fullGoods">
     <div class="container">
         <div class="totalFullGoods">
-            <div id="bigPhoto" class="totalPhotoGoods" style= "background: url('img/totalPhotoGoods.png') no-repeat center";>
+            <div id="bigPhoto" class="totalPhotoGoods">
                 
                     <img src="img/facePhoto1.png" alt="facePhoto" id="miniPhoto1">
                     <img src="img/backPhoto1.png" alt="backPhoto" id="miniPhoto2">
