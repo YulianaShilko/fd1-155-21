@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/pprpro.css"> 
     <link rel="stylesheet" href="css/adapt.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <title>Adress</title>
 </head>
 <body>
@@ -333,23 +334,6 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script  type="text/javascript" src="main.js"></script>
 <script type="text/javascript" src="appearance.js"></script>
-<script type="text/javascript">
-    $(document).ready(function(){
-
-        $(window).scroll(function(){
-            if ($(this).scrollTop() > 100) {
-                $('.scrollup').fadeIn();
-            } else {
-                $('.scrollup').fadeOut();
-            }
-        });
-
-        $('.scrollup').click(function(){
-            $("html, body").animate({ scrollTop: 0 }, 600);
-            return false;
-        });
-
-    });
-</script>
+<script type="text/javascript"> src="map.js"</script>
 </body>
 </html>
