@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #example .new { opacity: 0; }
+        #example .div_opacity {
+            -webkit-transition: opacity .2s ease-in-out;
+            -moz-transition: opacity .2s ease-in-out;
+            -ms-transition: opacity .2s ease-in-out;
+            -o-transition: opacity .2s ease-in-out;
+            transition: opacity .2s ease-in-out;
+            opacity: 1;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    </script>
+    
+</head>
+<body>
+    <div id="example" style="padding: 0px 0px 0px 100px; width: 350px; display: none;">
+        Тут Ваш текст, который будет плавно появляться.</div>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+             $.fn.animate_Text = function() {
+              var string = this.text();
+              return this.each(function(){
+               var $this = $(this);
+               $this.html(string.replace(/./g, '<span class="new">$&</span>'));
+               $this.find('span.new').each(function(i, el){
+                setTimeout(function(){ $(el).addClass('div_opacity'); }, 20 * i);
+               });
+              });
+             };
+             $('#example').show();
+             $('#example').animate_Text();
+            });
+            </script>
+</body>
+</html>

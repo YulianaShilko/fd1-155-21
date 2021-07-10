@@ -11,15 +11,19 @@
     header .header-bottom .header-bottom-left > div input{
         width: 252px;
     }
-    .slider .sliderA .sliderA-1 h2{
-        margin-right: 302px;
+
+    .slider_wrapper .container #next{
+            left: 852px;
     }
-    .slider .sliderA .sliderA-1 button{
-        margin-right: 336px;
+    .slider_wrapper .container .myslide .slider_itempack_1 p{
+            margin-right: 300px;
     }
-    .slider .sliderA .sliderA-1 p{
-        margin-right: 329px;
+    .slider_wrapper .container .myslide .slider_itempack_1 h2{
+        right: 94px;
+        width: 922px;
     }
+
+
     .sale .container .goodsSale{
         width: 281px;
     }
@@ -57,6 +61,8 @@
         .view .container div figure img{
                 width: 284px;
         }
+        .hits .container #showContent{
+        margin-left: 336px;}
 }
 
 @media all  and (max-width:924px){
@@ -75,6 +81,9 @@
         header .header-bottom .header-bottom-left{
                 display: block;
         }
+        header .header-bottom .header-bottom-left h3{
+                margin-left: 0px;
+        }
         header .header-bottom .header-bottom-left > div input{
                 background-color: #EEEEEE;
                 margin-top: 17px;
@@ -83,19 +92,22 @@
         header .header-bottom .header-bottom-left h3{
                 font-size: 36px;
         }
-        .slider .container .sliderA .sliderA-1{
-                background-size: 704px 255px;
+        
+        .slider_wrapper .container #next{
+                left: 451px;
         }
-        .slider .sliderA .sliderA-1 h2{
-                width: 319px;
-                font-size: 20px;
+        .slider_wrapper .container .myslide .slider_itempack_1 p{
+                width: 300px;
+                right: -158px;
         }
-        .slider .sliderA .sliderA-1 p{
-                width: 319px;
+        .slider_wrapper .container .myslide .slider_itempack_1 h2{
+            right: 94px;
+            width: 400px;
         }
-        .slider .sliderA .sliderA-1 button{
-                margin-right: 217px;
+        .slider_wrapper .container .myslide .slider_itempack_1 button{
+                left: 89px;
         }
+
         .sale .container .goodsSale{
                 width: 226px;
         }
@@ -125,9 +137,15 @@
         .hits .container #showContent{
                 margin-left: 135px;
         }
+        .view{
+                padding-bottom: 0px;
+        }
         .view .container div{
                 flex-direction: column;
                 align-items: center;
+        }
+        .view .container div figure{
+                width: 296px;
         }
         footer .container .colomns ul li{
                 font-size: 11px;
@@ -135,25 +153,320 @@
 }
 @media all  and (max-width:530px){
         .container{
-                width: 320px;
+                width: 340px;
         }
         header .header-bottom .header-bottom-left > div input{
                 background-color: #EEEEEE;
                 margin-top: 17px;
                 width: 320px;
         }
-        .slider .sliderA .sliderA-1 button{
-                margin-right: 27px;
+        .slider_wrapper .container #next{
+                left: 290px;
+        }
+        
+        .slider_wrapper .container .myslide .slider_itempack_1 p{
+                width: 200px;
+                right: -205px;
+                font-size: 12px;
+        }
+        .slider_wrapper .container .myslide .slider_itempack_2 h2{
+                display: none;
+        }
+        .slider_wrapper .container .myslide .slider_itempack_1 h2{
+            right: 94px;
+            width: 200px;
+            font-size: 18px;
+        }
+        .slider_wrapper .container .myslide .slider_itempack_1 button{
+                left: 22px;
         }
         .sale .container .goodsSale .percent{
                 left: 222px;
-    top: 203px;
+                top: 203px;
         }
         .sale .container .goodsSale {
-                width: 352px;
+                width: 158px;
         }
         .sale .container .goodsSale img{
-                margin-left: 93px;
-    margin-top: 65px;
+                margin-left: 3px;
+                margin-top: 65px;
+        }
+        .sale .container .goodsSale p{
+                font-size: 13px;
+                top: 9px;
+        }
+        .sale .container .goodsSale span{
+                font-size: 19px;
+                right: 24px;
+                top: 45px;
+        }
+        .sale .container .goodsSale .percent{
+                left: 87px;
+                top: 203px;
+        }
+        .hits .container ul li{
+                background-size: 144px;
+                width: 170px;
+        }
+        .hits .container ul li p:first-child{
+                font-size: 16px;
+        }
+        .hits .container ul li p:nth-child(2){
+                font-size: 13px;
+        }
+        .hits .container ul li span{
+                font-size: 13px;
+        }
+        .hits .container #showContent{
+                margin-left: 56px;
+        }
+        .searchInstagram {
+                padding-bottom: 36px;
+        }
+        footer .container .colomns ul li{
+                font-size: 8px;
+        }
+}
+
+
+
+/* basket */
+
+@media all  and (max-width:1200px){
+        .orderFull .container .orderLeft {
+                width: 622px;
+        }
+        .orderFull .container .orderLeft .orderGoods .priceGoodsBasket{
+                margin-right: 97px;
+        }
+        .orderFull .container .orderRight{
+                width: 263px;
+                height: 374px;
+        }
+        .orderFull .container .orderRight button {
+                padding: 0px;
+                width: 209px;
+        }
+        .orderFull .container .orderRight .agreementRules label {
+                width: 172px;
+        }
+        .orderFull .container .orderLeft .wayDelivery form label{
+                width: 290px;
+        }
+        .orderFull .container .orderLeft .theWayPay form label{
+                width: 290px;
+        }
+}
+@media all  and (max-width:924px){
+        .orderFull .container .orderLeft{
+                width: 500px;
+        }
+        .orderFull .container .orderRight{
+                display: none;
+        }
+        .orderFull .container .orderLeft .orderGoods .priceGoodsBasket{
+                margin-right: 54px;
+                padding-left: 116px;
+        }
+        .orderFull .container .orderLeft .wayDelivery form label{
+                width: 240px;
+        }
+        .orderFull .container .orderLeft .theWayPay form label{
+                width: 240px;
+        }
+        .orderFull .container .orderLeft .yourData .totalnames form .names .nameUs input,
+        .orderFull .container .orderLeft .yourData .totalnames form .contacts .telephone input,
+        .orderFull .container .orderLeft .yourData .totalnames form .contacts .email input,
+        .orderFull .container .orderLeft .yourData .totalnames form .names .secondnameUs input{
+                width: 235px; 
+        }
+        .orderFull .container .orderLeft .SMS{
+                padding-bottom: 108.5px;
+        }
+        .buttonFixed{
+                display: block;
+        }
+        .buttonFixed .container .fixBot button{
+                width: 500px;
+        }
+        
+}
+@media all  and (max-width:530px){
+        .theWay{
+                display: none;
+        }
+        .orderFull .container .orderLeft .orderGoods .priceGoodsBasket{
+                display: none;
+        }
+        .orderFull .container .orderLeft .orderGoods{
+                width: 300px;
+                padding-bottom: 4px;
+        }
+        .orderFull .container .orderLeft .theWayPay .ways, .orderFull .container .orderLeft .yourData .ways{
+                padding-top: 38px;
+        }
+        .orderFull .container .orderLeft .orderGoods p{
+                font-size: 14px;
+        }
+        .orderFull .container .orderLeft .wayDelivery form label, .orderFull .container .orderLeft .theWayPay form label{
+                width: 163px; 
+                font-size: 12px;
+        }
+        .orderFull .container .orderLeft .yourData .totalnames form .names .nameUs input,
+        .orderFull .container .orderLeft .yourData .totalnames form .contacts .telephone input,
+        .orderFull .container .orderLeft .yourData .totalnames form .contacts .email input,
+        .orderFull .container .orderLeft .yourData .totalnames form .names .secondnameUs input{
+                width: 163px; 
+        }
+        .orderFull .container .orderLeft .yourData .register span{
+                width: 234px;
+                height: 100px;
+        }
+        .buttonFixed .container .fixBot button{
+                width: 320px;
+        }
+
+}
+
+
+/* Searcher */
+
+@media all  and (max-width:1200px){
+
+        .fullOfSearch .container .full .rightFullOfSearch{
+                width: 654px;
+        }
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods {
+                height: 1609px;
+                width: 668px;
+        }
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising{
+                width: 800px;
+        }
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card{
+                width: 190px;
+        }
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card img{
+                margin-left: 7px;
+                margin-top: 47px;
+                width: 194px;
+        }
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card .mainBrand{
+                width: 142px;
+                padding-bottom: 70px;
+        }
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods #showContentCameras{
+                margin-left: 215px;
+        }
+}
+@media all  and (max-width:924px){
+        .theWay{
+                display: none;
+        }
+        .fullOfSearch .container .full{
+                display: block;
+        }
+        .fullOfSearch .container .full .leftFullOfSearch{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                width: 491px;
+        }
+        .fullOfSearch .container .full .leftFullOfSearch .priceG .priceSearch input{
+                width: 130px;
+        }
+        .fullOfSearch .container .full .leftFullOfSearch .quantityPixel{
+                width: 209px;
+                order: -1;
+                padding-top: 18px;
+        }
+        .fullOfSearch .container .full .leftFullOfSearch .matrixSearch{
+                padding-top: 46px;
+        }
+        .fullOfSearch .container .full .leftFullOfSearch .lensSearch{
+                padding-top: 47px;
+        }
+        .fullOfSearch .container .full .leftFullOfSearch .priceG{
+                width: 209px;
+        }
+        .fullOfSearch .container .full .rightFullOfSearch{
+                width: 500px;
+                padding-top: 68px;
+        }
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods {
+                height: 1419px;
+                width: 500px;
+        }
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising{
+                width: 500px;
+        }
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card{
+                width: 151px;
+                height: 454px;
+        }
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card img{
+                width: 137px;
+        }
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card .mainBrand,
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card .card-price,
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card .likesStars .stars{
+                margin-left: 10px;
+        }
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods #showContentCameras{
+                margin-left: 151px;
+        }
+}
+@media all  and (max-width:530px){
+        .fullOfSearch .container .full .leftFullOfSearch{
+                width: 320px;
+        }
+        .fullOfSearch .container .full .leftFullOfSearch .priceG .priceSearch input{
+                width: 62px;
+        }
+        .fullOfSearch .container .full .leftFullOfSearch .quantityPixel,
+        .fullOfSearch .container .full .leftFullOfSearch .priceG {
+                width: 113px;
+        }
+        .fullOfSearch .container .full .leftFullOfSearch .quantityPixel .headersSection{
+                height: 58px;
+        }
+        .fullOfSearch .container .full .leftFullOfSearch .priceG .headersSection{
+                height: 53px;
+        }
+        
+        .fullOfSearch .container .full .rightFullOfSearch{
+                width: 320px;
+                padding-top: 68px;
+        }
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods {
+                height: 1419px;
+                width: 320px;
+        }
+
+        .fullOfSearch .container .full .rightFullOfSearch .SortShow .SortBy p{
+                font-size: 12px;
+        }
+        .fullOfSearch .container .full .rightFullOfSearch .SortShow .ShowBy {
+               display: none; 
+        }
+        
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods {
+                height: 1871px;
+        }
+
+
+
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising{
+                width: 350px;
+        }
+        
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card .mainBrand,
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card .card-price,
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card .likesStars .stars{
+                margin-left: 10px;
+        }
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods #showContentCameras{
+                margin-left: 69px;
+                font-size: 12px;
         }
 }

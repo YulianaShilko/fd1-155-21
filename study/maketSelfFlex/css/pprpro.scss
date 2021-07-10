@@ -147,7 +147,7 @@ header{
                     margin-right: 48px;
                 }
                 
-                &>div{
+                div{
                     position: relative;
 
                     input{
@@ -163,9 +163,21 @@ header{
                         padding-left: 21px;
                     }
                     label{
-                            position: absolute;
-                          bottom: 0;
+                          position: absolute;
+                          bottom: 17px;
                           right: 23px;
+                          width: 20px;
+                          height: 20px;
+
+                          .loopa{
+                              svg{
+                                  &:nth-child(2){
+                                    position: absolute;
+                                    bottom: 0px;
+                                    right: 1px;
+                                  }
+                              }
+                          }
                       }
 
                 }
@@ -174,7 +186,8 @@ header{
                 display:flex;
 
 
-                .adress{
+                #adress{
+                    display: none;
                     position: relative;
                     margin-left: 48px;
                     margin-right: 52px;
@@ -218,8 +231,9 @@ header{
                     }
                 }
 
-                .enter{
+                #enter{
                     position: relative;
+                    display: none;
                     
                     &>div{
                         position: relative;
@@ -339,7 +353,8 @@ header{
                     }
                 }    
 
-                .basket{
+                #basket{
+                    display: none;
                     position: relative;
                     margin-left: 48px;
                     
@@ -631,7 +646,7 @@ header{
     display: none; 
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.5); 
-    z-index: 3; 
+    z-index: 5; 
     width: 100%;
     position: absolute;
     height: 3020px;
@@ -651,11 +666,6 @@ header{
         -webkit-animation-duration: 0.4s;
         animation-name: animatetop;
         animation-duration: 0.4s;
-
-        /* #myBtn-leftMenuCategory{
-            background-color: $whiteMain;
-            border-radius: 8px;
-        } */
 
         li{
 
@@ -746,120 +756,159 @@ header{
         from {top:-300px; opacity:0}
         to {top:0; opacity:1}
     }
-
-.slider{
+.slider_wrapper{
     height: 440px;
-
-    .sliderA{
-        width: 99.88%;
-        height: 350px;
+    .container{
         position: relative;
-        text-align: center;
-
-        div{
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            right: 0px;
-            bottom: 0px;
-            z-index: 0;
-            visibility: hidden;
-            opacity: 0;
-            transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
-        }
-
-        .sliderA-1{
-
-            h2{
-                font-style: normal;
-                font-weight: bold;
-                font-size: $headers;
-                line-height: 37px;
-                color: $whiteMain;
-                margin-right: 347px;
-                margin-top: 46px;
-            }
-
-            p{
-                font-style: normal;
-                font-weight: normal;
-                line-height: 19px;
-
-                color: $whiteMain;
-                opacity: 0.6;
-                padding-top: 22px;
-                 margin-right: 566px;
-            }
-
-            button{
-                width: 220px;
-                height: 46px;
-                left: 172px;
-                top: 200px;
-                border: 2px solid $yellow;
-                border-radius: 28px;
-                background: transparent;
-                color: $yellow;
-                margin-top: 43px;
-                margin-right: 752px;
-            }
-        }
-
-        .sliderA-2{
-            height: 360px;
-            width: 1120;
-        }
-
-        input{
+        .myslide{
             display: none;
-
-            &+label{
-                display: inline-block;
-                width: 10px;
-                height: 10px;
-                border-radius: 8px;
-                background: rgba(90, 90, 90, 0.8);
-                border: 2px solid rgba(190, 190, 190, 0.8);
-                cursor: pointer;
-                z-index: 1;
+            
+            position: relative;
+            text-align: center;
+            
+            .slider_itempack_1{
+                height: 350px;
+                width: 100%;
                 position: relative;
-                margin-right: 4px;
-                top: 90%;
-                transition: background 0.8s ease-out 0s;
-                margin-bottom: -48px;
-            }
-
-            label{
-                &>div{
+                background: url('img/sliderA.png') no-repeat center;
+                h2{
                     position: absolute;
-                    top: 0px;
-                    left: 0px;
-                    right: 0px;
-                    bottom: 0px;
-                    z-index: 0;
-                    visibility: hidden;
-                    opacity: 0;
-                    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: $headers;
+                    line-height: 37px;
+                    color: $whiteMain;
+                    bottom: 250px;
+                    right: 485px;
+                }
+    
+                p{
+                    position: absolute;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: 19px;
+                    bottom: 181px;
+                    right: 85px;
+                    color: $whiteMain;
+                    opacity: 0.6;
+                    padding-top: 22px;
+                     margin-right: 566px;
+                }
+    
+                button{
+                    position: absolute;
+                    width: 220px;
+                    height: 46px;
+                    left: 172px;
+                    top: 200px;
+                    border: 2px solid $yellow;
+                    border-radius: 28px;
+                    background: transparent;
+                    color: $yellow;
+                    margin-top: 43px;
+                    margin-right: 752px;
+                }
+            }
+            .slider_itempack_2{
+                height: 350px;
+                 width: 100%;
+                 h2{
+                     width: 270px;
+                     border-radius: 20px;
+                     border: 5px solid $yellow;
+                     color: $yellow;
+                     font-size: 30px;
+                 }
+            }
+            .slider_itempack_3{
+                height: 350px;
+                width: 100%;
+                h2{
+                    width: 270px;
+                    border-radius: 20px;
+                    border: 5px solid $yellow;
+                    color: $yellow;
+                    font-size: 30px;
+                }
+            }
+        }
+        #prev{
+            width: 40px;
+            height: 40px;
+            z-index: 4;
+            position: absolute;
+            top: 147px;
+            left: 19px;
+
+            svg{
+                
+                &:nth-child(1){
+                    position: absolute;
                     
                 }
-
+                &:nth-child(2){
+                    position: absolute;
+                    left: 10px;
+                    bottom: 18px;
+                    z-index: inherit;
+                }
+                &:nth-child(3){
+                    position: absolute;
+                    left: 10px;
+                    bottom: 10px;
+                    z-index: inherit;
+                }
             }
-            &+label:hover{
-                background: rgba(250, 250, 250, 0.8);
-            }    
-            
+
+            &:hover{
+                cursor: pointer;
+                & > svg{
+                    &:nth-child(1){
+                        & > path{
+                            fill: $yellow;
+                        }
+                    } 
+                }
+            }
         }
-        input:checked{
+        #next{
+            width: 40px;
+            height: 40px;
+            z-index: 4;
+            position: absolute;
+            top: 147px;
+            left: 1073px;
 
-            &+label{
-               &+div{
-                visibility: visible;
-                opacity: 1;
-                transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
-
-                } 
+            svg{
+                
+                &:nth-child(1){
+                    position: absolute;
+                    
+                }
+                &:nth-child(2){
+                    position: absolute;
+                    left: 10px;
+                    bottom: 18px;
+                    z-index: inherit;
+                }
+                &:nth-child(3){
+                    position: absolute;
+                    left: 22px;
+                    bottom: 10px;
+                    z-index: inherit;
+                }
             }
-            
+
+            &:hover{
+                cursor: pointer;
+                & > svg{
+                    &:nth-child(1){
+                        & > path{
+                            fill: $yellow;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -916,6 +965,7 @@ header{
                     left: 242px;
                     top: 178px;
                     text-align: center;
+                    animation: round1 6s infinite;
                 }
 
                 &:last-child{
@@ -926,11 +976,6 @@ header{
                     cursor: pointer;    
                     transform: scale(1.05);
                     transition: 0.5s;
-
-                    &>.percent{
-                        animation: round1 6s infinite;
-
-                    }
                 }
             }
     }
@@ -1521,6 +1566,33 @@ footer{
 
 
 /* Корзина */
+
+.buttonFixed{
+    display: none;
+    .container{
+        
+        .fixBot{
+            position: relative;
+            button{
+            height: 67px;
+            position: fixed;
+            background: #FB000F;
+            border-radius: 8px;
+            bottom: 0;
+            border: none;
+            z-index: 3;
+            bottom: 83px;
+            font-weight: 500;
+            font-size: 16px;
+                line-height: 19px;
+                color: $whiteMain;
+            }
+        
+        }
+        
+    }
+    
+}
 
 .orderFull{
 
@@ -2172,19 +2244,28 @@ footer{
                             font-size: $mini-text;
                             line-height: 16px;
                             opacity: 0.3;
+                            margin-right: 18px;
 
-                            &:nth-child(1){
-                                margin-right: 18px;
-                            }
                             &:nth-child(2){
-                                margin-right: 18px;
+                                border-bottom: 2px black dashed;
+
+                                &:hover{
+                                    cursor: pointer;
+                                }
+                            }
+                            &:nth-child(3){
+                                border-bottom: 2px black dashed;
+
+                                &:hover{
+                                    cursor: pointer;
+                                }
                             }
                         }
                     }
                 }
 
                 .FullGoods{
-                    width: 848px;
+                    width: 860px;
                     height: 1652px;
                     overflow: hidden;
                     position: relative;
@@ -2197,6 +2278,7 @@ footer{
                         margin-top: 18px;
 
                         .card{
+                            display: none;
                             width: 267px;
                             height: 499px;
                             background: #FFFFFF;

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    </script>
+    <style>
+    img.fade { display: none;
+    width: 150px; }
+    </style>
+    
+</head>
+<body>
+    
+    <img class="fade" src="IMG_2540.PNG" alt="">
+    <img class="fade" src="IMG_2540.PNG" alt="">
+    <img class="fade" src="IMG_2540.PNG" alt="">
+    
+    
+    <script type="text/javascript">
+$(document).ready(function(){
+ $.fn.fade_img = function (ops) {
+  var $elem = this;
+  var res = $.extend({ delay: 600, speed: 600 }, ops);
+  for (var i=0, pause=0, l=$elem.length; i<l; i++, pause+=res.delay) {
+   $elem.eq(i).delay(pause).fadeIn(res.speed);
+  }
+  return $elem;
+ };
+ $('.card').fade_img();
+});
+
+</script>
+</body>
+</html>
