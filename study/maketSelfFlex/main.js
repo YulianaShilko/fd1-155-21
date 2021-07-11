@@ -50,13 +50,22 @@ $thumbScroller_thumb.hover(
 
 var modalLeftMenu = document.getElementById('myModalCategory');
 var btnLeftMenu = document.getElementById("myBtn-ModalCategory");
+var btnLeftMenu2 = document.getElementById("myBtn-ModalCategory2");
 
 btnLeftMenu.onclick = function() {
     modalLeftMenu.style.display = "block";
 }
+
+btnLeftMenu2.onclick = function() {
+    modalLeftMenu.style.display = "block";
+}
+
+
+
 window.onclick = function(event) {
     if (event.target == modalLeftMenu) {
         modalLeftMenu.style.display = "none";
+        modalLeftMenu2.style.display = "none";
     }
 }
 var modalLeftMenuMore = document.getElementById('myleftMenuCategoryMore');
@@ -118,6 +127,28 @@ btnLeftMenuMore6.onclick = function() {
     btnLeftMenuMore.style.backgroundColor= "white"; btnLeftMenuMore1.style.backgroundColor= "white"; 
     btnLeftMenuMore2.style.backgroundColor= "white"; btnLeftMenuMore3.style.backgroundColor= "white";
     btnLeftMenuMore4.style.backgroundColor= "white"; btnLeftMenuMore5.style.backgroundColor = "white";
+}
+
+
+
+var modalEnter = document.getElementById('myModalEnter');
+var btnModalEnter = document.getElementById("enter");
+var btnModalEnter1 = document.getElementById("enter1");
+var btnModalEnter2 = document.getElementById("enter2");
+
+btnModalEnter.onclick = function() {
+    modalEnter.style.display = "block";
+}
+btnModalEnter1.onclick = function() {
+    modalEnter.style.display = "block";
+}
+btnModalEnter2.onclick = function() {
+    modalEnter.style.display = "block";
+}
+window.onclick = function(event) {
+    if (event.target == modalEnter) {
+        modalEnter.style.display = "none";
+    }
 }
 
 
