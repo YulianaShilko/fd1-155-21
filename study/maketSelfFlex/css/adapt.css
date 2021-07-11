@@ -38,23 +38,23 @@
         left: 173px;
         top: 178px;
     }
-    .hits .container ul li:nth-child(1) {
+    .hits .container ul a li:nth-child(1) {
         margin-right: 0px; }
-      .hits .container ul li:nth-child(2) {
+      .hits .container ul a li:nth-child(2) {
         margin-right: 0px; }
-      .hits .container ul li:nth-child(3) {
+      .hits .container ul a li:nth-child(3) {
         margin-right: 0px; }
-      .hits .container ul li:nth-child(4) {
+      .hits .container ul  a li:nth-child(4) {
         margin-right: 0px; }
-      .hits .container ul li:nth-child(6) {
+      .hits .container ul a li:nth-child(6) {
         margin-right: 0px; }
-      .hits .container ul li:nth-child(7) {
+      .hits .container ul  a li:nth-child(7) {
         margin-right: 0px; }
-      .hits .container ul li:nth-child(8) {
+      .hits .container ul a li:nth-child(8) {
         margin-right: 0px; }
-      .hits .container ul li:nth-child(9) {
+      .hits .container ul a li:nth-child(9) {
         margin-right: 0px; }
-        .hits .container ul li{
+        .hits .container ul a li{
                 width: 180px;
         }
 
@@ -131,7 +131,7 @@
         .sale .container .goodsSale img{
                 margin-left: 32px;
         }
-        .hits .container ul li{
+        .hits .container ul a li{
                 width: 249px;
         }
         .hits .container #showContent{
@@ -208,17 +208,17 @@
                 left: 87px;
                 top: 203px;
         }
-        .hits .container ul li{
+        .hits .container ul a li{
                 background-size: 144px;
                 width: 170px;
         }
-        .hits .container ul li p:first-child{
+        .hits .container ul a  li p:first-child{
                 font-size: 16px;
         }
-        .hits .container ul li p:nth-child(2){
+        .hits .container ul a  li p:nth-child(2){
                 font-size: 13px;
         }
-        .hits .container ul li span{
+        .hits .container ul  a li span{
                 font-size: 13px;
         }
         .hits .container #showContent{
@@ -490,6 +490,9 @@
         .fullGoods .container .totalFullGoods .totalPhotoGoods{
                 background-size: 356px 356px;
         }
+        .carouselGoods .container .carousel .next{
+                left: 868px;
+        }
 }
 @media all  and (max-width:924px){
         .fullGoods{
@@ -530,6 +533,9 @@
                 width: 177px;
                 padding: 10px 0px;
         }
+        .carouselGoods .container .carousel .next{
+                left: 471px;
+        }
 }
 @media all  and (max-width:530px){
         .fullGoods .container .totalFullGoods .totalPhotoGoods{
@@ -558,6 +564,9 @@
         }
         .fullDescription .container .fd ul li{
                 height: 58px;
+        }
+        .carouselGoods .container .carousel .next{
+                left: 306px;
         }
 }
 

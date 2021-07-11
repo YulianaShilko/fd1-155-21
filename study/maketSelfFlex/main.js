@@ -62,10 +62,12 @@ btnLeftMenu2.onclick = function() {
 
 
 
-window.onclick = function(event) {
-    if (event.target == modalLeftMenu) {
+window.onclick = function(event) {{
+    if ( event.target == modalLeftMenu) {
         modalLeftMenu.style.display = "none";
-        modalLeftMenu2.style.display = "none";
+        modalLeftMenu2.style.display = "none";}
+        else if (event.target == modalEnter){
+        modalEnter.style.display = "none";}
     }
 }
 var modalLeftMenuMore = document.getElementById('myleftMenuCategoryMore');
@@ -129,8 +131,6 @@ btnLeftMenuMore6.onclick = function() {
     btnLeftMenuMore4.style.backgroundColor= "white"; btnLeftMenuMore5.style.backgroundColor = "white";
 }
 
-
-
 var modalEnter = document.getElementById('myModalEnter');
 var btnModalEnter = document.getElementById("enter");
 var btnModalEnter1 = document.getElementById("enter1");
@@ -145,11 +145,9 @@ btnModalEnter1.onclick = function() {
 btnModalEnter2.onclick = function() {
     modalEnter.style.display = "block";
 }
-window.onclick = function(event) {
-    if (event.target == modalEnter) {
-        modalEnter.style.display = "none";
-    }
-}
+
+
+
 
 
 

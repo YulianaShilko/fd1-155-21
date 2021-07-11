@@ -5,8 +5,9 @@ function onclick1(e){
     var btnDel1 = document.getElementById("btnPickUp");
     var btnDel2 = document.getElementById("btnDelivery");
     var printBlock = document.getElementById("printBlock");
-
+    var adressYours;
     var language = e.target.value;
+    
     if (language == "pickUp")
         btnDel1.style.background = "white",
         btnDel1.style.border = "2px solid black",
@@ -15,6 +16,7 @@ function onclick1(e){
         btnDel2.style.border = "none",
         btnDel2.style.opacity = "0.5",
         printBlock.style.display = "none";
+        
 
         
         else 
@@ -26,6 +28,11 @@ function onclick1(e){
         btnDel1.style.opacity = "0.5",
         printBlock.style.display = "block";
 }
+/* function putAdress(){
+    if (language == "pickUp")
+            adressYours = prompt('Введите Ваш адрес ');
+            printBlock.value = adressYours; 
+        } */
 for (var i = 0; i < myForm.theWayDelivery.length; i++) {
     myForm.theWayDelivery[i].addEventListener("click", onclick1);
 };
@@ -42,9 +49,7 @@ function onclick2(r){
         btnPay2.style.background = "#F7F7FA",
         btnPay2.style.border = "none",
         btnPay2.style.opacity = "0.5";
-    
 
-        
         else 
         btnPay2.style.background = "white",
         btnPay2.style.border = "2px solid black",

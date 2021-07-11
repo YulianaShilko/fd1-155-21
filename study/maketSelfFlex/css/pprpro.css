@@ -652,46 +652,46 @@ header {
     -ms-flex-flow: wrap;
         flex-flow: wrap;
     padding-bottom: 51px; }
-    .hits .container ul li {
+    .hits .container ul a li {
       position: relative;
       background-image: url("img/hit1.png");
       height: 239px;
-      width: 187px; }
-      .hits .container ul li:nth-child(1) {
+      width: 178px; }
+      .hits .container ul a li:nth-child(1) {
         margin-right: 46px; }
-      .hits .container ul li:nth-child(2) {
+      .hits .container ul a li:nth-child(2) {
         margin-right: 46px; }
-      .hits .container ul li:nth-child(3) {
+      .hits .container ul a li:nth-child(3) {
         margin-right: 46px; }
-      .hits .container ul li:nth-child(4) {
+      .hits .container ul a li:nth-child(4) {
         margin-right: 46px; }
-      .hits .container ul li:nth-child(6) {
+      .hits .container ul a li:nth-child(6) {
         margin-right: 46px; }
-      .hits .container ul li:nth-child(7) {
+      .hits .container ul a li:nth-child(7) {
         margin-right: 46px; }
-      .hits .container ul li:nth-child(8) {
+      .hits .container ul a li:nth-child(8) {
         margin-right: 46px; }
-      .hits .container ul li:nth-child(9) {
+      .hits .container ul a li:nth-child(9) {
         margin-right: 46px; }
-      .hits .container ul li p {
+      .hits .container ul a li p {
         position: absolute;
         bottom: 18px; }
-        .hits .container ul li p:first-child {
+        .hits .container ul a li p:first-child {
           font-size: 18px; }
-        .hits .container ul li p:nth-child(2) {
+        .hits .container ul a li p:nth-child(2) {
           font-size: 14px;
           -webkit-text-decoration-line: line-through;
                   text-decoration-line: line-through;
           right: 72px;
           line-height: 16px;
           color: rgba(0, 0, 0, 0.5); }
-      .hits .container ul li span {
+      .hits .container ul a li span {
         position: absolute;
         bottom: 0;
         line-height: 16px;
         color: rgba(0, 0, 0, 0.5);
         font-size: 14px; }
-      .hits .container ul li:hover {
+      .hits .container ul a li:hover {
         cursor: pointer;
         -webkit-transform: scale(1.05);
                 transform: scale(1.05);
@@ -1011,6 +1011,103 @@ footer {
   padding-left: 44px;
   padding-top: 15px;
   display: inline-block; }
+
+.carouselGoods .container .head {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 42px;
+  padding-bottom: 24px;
+  padding-top: 25px; }
+.carouselGoods .container .carousel {
+  position: relative;
+  width: inherit;
+  padding: 10px 40px;
+  height: 260px; }
+  .carouselGoods .container .carousel .prev {
+    width: 40px;
+    height: 40px;
+    z-index: 4;
+    position: absolute;
+    top: 83px;
+    left: 19px; }
+    .carouselGoods .container .carousel .prev svg:nth-child(1) {
+      position: absolute; }
+    .carouselGoods .container .carousel .prev svg:nth-child(2) {
+      position: absolute;
+      left: 10px;
+      bottom: 18px;
+      z-index: inherit; }
+    .carouselGoods .container .carousel .prev svg:nth-child(3) {
+      position: absolute;
+      left: 10px;
+      bottom: 10px;
+      z-index: inherit; }
+    .carouselGoods .container .carousel .prev:hover {
+      cursor: pointer; }
+      .carouselGoods .container .carousel .prev:hover > svg:nth-child(1) > path {
+        fill: #FADE4B; }
+  .carouselGoods .container .carousel .next {
+    width: 40px;
+    height: 40px;
+    z-index: 4;
+    position: absolute;
+    top: 83px;
+    left: 1080px; }
+    .carouselGoods .container .carousel .next svg:nth-child(1) {
+      position: absolute; }
+    .carouselGoods .container .carousel .next svg:nth-child(2) {
+      position: absolute;
+      left: 10px;
+      bottom: 18px;
+      z-index: inherit; }
+    .carouselGoods .container .carousel .next svg:nth-child(3) {
+      position: absolute;
+      left: 22px;
+      bottom: 10px;
+      z-index: inherit; }
+    .carouselGoods .container .carousel .next:hover {
+      cursor: pointer; }
+      .carouselGoods .container .carousel .next:hover > svg:nth-child(1) > path {
+        fill: #FADE4B; }
+  .carouselGoods .container .carousel .gallery {
+    overflow: hidden;
+    margin-left: 34px; }
+    .carouselGoods .container .carousel .gallery .images {
+      height: 200px;
+      width: 9999px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      -webkit-transition: margin-left 250ms;
+      transition: margin-left 250ms;
+      /* удаляем пустое пространство между элементами li, у которых установлен inline-block */
+      /* http://davidwalsh.name/remove-whitespace-inline-block */
+      font-size: 0; }
+      .carouselGoods .container .carousel .gallery .images a li {
+        width: 182px;
+        height: 196px;
+        /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */
+        display: inline-block;
+        position: relative; }
+        .carouselGoods .container .carousel .gallery .images a li p {
+          font-size: 16px;
+          position: absolute; }
+          .carouselGoods .container .carousel .gallery .images a li p:nth-child(1) {
+            bottom: 0;
+            font-weight: bold; }
+          .carouselGoods .container .carousel .gallery .images a li p:nth-child(2) {
+            font-size: 14px;
+            bottom: 0;
+            right: 69px;
+            text-decoration: line-through;
+            color: rgba(0, 0, 0, 0.5); }
+        .carouselGoods .container .carousel .gallery .images a li span {
+          position: absolute;
+          display: block;
+          font-size: 15px;
+          width: inherit;
+          padding: 0 10px;
+          color: rgba(0, 0, 0, 0.5); }
 
 /* Корзина */
 .buttonFixed {
