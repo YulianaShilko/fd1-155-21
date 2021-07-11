@@ -198,71 +198,13 @@ header {
               right: -6px; }
         header .header-bottom .header-bottom-right #enter figcaption {
           position: absolute;
-          bottom: -33px; }
+          bottom: -1px; }
         header .header-bottom .header-bottom-right #enter:hover {
           cursor: pointer; }
           header .header-bottom .header-bottom-right #enter:hover > div > svg > path {
             stroke: #FADE4B; }
           header .header-bottom .header-bottom-right #enter:hover > figcaption {
             color: #FADE4B; }
-      header .header-bottom .header-bottom-right #ch-box-for-login, header .header-bottom .header-bottom-right #ch-box-for-login1 {
-        display: none; }
-      header .header-bottom .header-bottom-right #ch-box-for-login:checked ~ .login-forma {
-        display: block; }
-      header .header-bottom .header-bottom-right #ch-box-for-login1:checked ~ .login-forma {
-        display: block; }
-      header .header-bottom .header-bottom-right .login-forma {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        text-align: center;
-        background: rgba(41, 40, 40, 0.7);
-        z-index: 30;
-        color: #000000; }
-        header .header-bottom .header-bottom-right .login-forma div {
-          width: 350px;
-          padding: 30px;
-          background: #fff;
-          margin-top: 92px;
-          margin-left: auto;
-          margin-right: auto;
-          height: 330px;
-          border-radius: 10px; }
-          header .header-bottom .header-bottom-right .login-forma div form {
-            position: relative; }
-            header .header-bottom .header-bottom-right .login-forma div form span {
-              position: absolute;
-              right: -1px;
-              top: -24px;
-              cursor: pointer; }
-              header .header-bottom .header-bottom-right .login-forma div form span:hover {
-                color: #FADE4B; }
-            header .header-bottom .header-bottom-right .login-forma div form input {
-              width: 240px;
-              height: 31px;
-              padding-left: 10px;
-              margin: 10px;
-              border-radius: 8px; }
-            header .header-bottom .header-bottom-right .login-forma div form input[type="submit"] {
-              background: #FADE4B;
-              border: 1px solid black;
-              cursor: pointer;
-              border-radius: 8px; }
-            header .header-bottom .header-bottom-right .login-forma div form input[type="checkbox"] {
-              width: 15px;
-              height: 15px; }
-            header .header-bottom .header-bottom-right .login-forma div form .inline-p {
-              display: inline-block;
-              position: relative;
-              top: -3px;
-              font-size: 12px; }
-            header .header-bottom .header-bottom-right .login-forma div form .acc {
-              text-align: center;
-              text-decoration: underline;
-              margin-top: 10px; }
       header .header-bottom .header-bottom-right #basket {
         display: none;
         position: relative;
@@ -338,82 +280,24 @@ header {
         cursor: pointer; }
         .bottomMenu .container .totalFixedMenu .categoryy:hover > svg > line {
           stroke: black; }
-    .bottomMenu .container .totalFixedMenu .enter {
+    .bottomMenu .container .totalFixedMenu #enter1 {
       position: relative;
       top: 16px; }
-      .bottomMenu .container .totalFixedMenu .enter > div {
+      .bottomMenu .container .totalFixedMenu #enter1 > div {
         position: relative;
         width: 24px;
         height: 24px; }
-        .bottomMenu .container .totalFixedMenu .enter > div svg {
+        .bottomMenu .container .totalFixedMenu #enter1 > div svg {
           position: absolute; }
-          .bottomMenu .container .totalFixedMenu .enter > div svg:first-child {
+          .bottomMenu .container .totalFixedMenu #enter1 > div svg:first-child {
             right: 0px; }
-          .bottomMenu .container .totalFixedMenu .enter > div svg:last-child {
+          .bottomMenu .container .totalFixedMenu #enter1 > div svg:last-child {
             bottom: 0;
             right: -6px; }
-      .bottomMenu .container .totalFixedMenu .enter:hover {
+      .bottomMenu .container .totalFixedMenu #enter1:hover {
         cursor: pointer; }
-        .bottomMenu .container .totalFixedMenu .enter:hover > div > svg > path {
+        .bottomMenu .container .totalFixedMenu #enter1:hover > div > svg > path {
           stroke: black; }
-    .bottomMenu .container .totalFixedMenu #ch-box-for-login, .bottomMenu .container .totalFixedMenu #ch-box-for-login1 {
-      display: none; }
-    .bottomMenu .container .totalFixedMenu #ch-box-for-login:checked ~ .login-forma {
-      display: block; }
-    .bottomMenu .container .totalFixedMenu #ch-box-for-login1:checked ~ .login-forma {
-      display: block; }
-    .bottomMenu .container .totalFixedMenu .login-forma {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      text-align: center;
-      background: rgba(41, 40, 40, 0.7);
-      z-index: 30;
-      color: #000000; }
-      .bottomMenu .container .totalFixedMenu .login-forma div {
-        width: 350px;
-        padding: 30px;
-        background: #fff;
-        margin-top: 92px;
-        margin-left: auto;
-        margin-right: auto;
-        height: 330px;
-        border-radius: 10px; }
-        .bottomMenu .container .totalFixedMenu .login-forma div form {
-          position: relative; }
-          .bottomMenu .container .totalFixedMenu .login-forma div form span {
-            position: absolute;
-            right: -1px;
-            top: -24px;
-            cursor: pointer; }
-            .bottomMenu .container .totalFixedMenu .login-forma div form span:hover {
-              color: #FADE4B; }
-          .bottomMenu .container .totalFixedMenu .login-forma div form input {
-            width: 240px;
-            height: 31px;
-            padding-left: 10px;
-            margin: 10px;
-            border-radius: 8px; }
-          .bottomMenu .container .totalFixedMenu .login-forma div form input[type="submit"] {
-            background: #FADE4B;
-            border: 1px solid black;
-            cursor: pointer;
-            border-radius: 8px; }
-          .bottomMenu .container .totalFixedMenu .login-forma div form input[type="checkbox"] {
-            width: 15px;
-            height: 15px; }
-          .bottomMenu .container .totalFixedMenu .login-forma div form .inline-p {
-            display: inline-block;
-            position: relative;
-            top: -3px;
-            font-size: 12px; }
-          .bottomMenu .container .totalFixedMenu .login-forma div form .acc {
-            text-align: center;
-            text-decoration: underline;
-            margin-top: 10px; }
     .bottomMenu .container .totalFixedMenu .basket {
       position: relative;
       top: 12px; }
@@ -522,6 +406,58 @@ header {
               color: #000000;
               -webkit-text-decoration-line: underline;
                       text-decoration-line: underline; }
+
+.modal-enter .login-forma {
+  display: none;
+  text-align: center;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 6;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  margin-top: -180px; }
+  .modal-enter .login-forma div {
+    width: 350px;
+    padding: 30px;
+    background: #fff;
+    margin-top: 92px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 330px;
+    border-radius: 10px; }
+    .modal-enter .login-forma div form {
+      position: relative; }
+      .modal-enter .login-forma div form span {
+        position: absolute;
+        right: -1px;
+        top: -24px;
+        cursor: pointer; }
+        .modal-enter .login-forma div form span:hover {
+          color: #FADE4B; }
+      .modal-enter .login-forma div form input {
+        width: 240px;
+        height: 31px;
+        padding-left: 10px;
+        margin: 10px;
+        border-radius: 8px; }
+      .modal-enter .login-forma div form input[type="submit"] {
+        background: #FADE4B;
+        border: 1px solid black;
+        cursor: pointer;
+        border-radius: 8px; }
+      .modal-enter .login-forma div form input[type="checkbox"] {
+        width: 15px;
+        height: 15px; }
+      .modal-enter .login-forma div form .inline-p {
+        display: inline-block;
+        position: relative;
+        top: -3px;
+        font-size: 12px; }
+      .modal-enter .login-forma div form .acc {
+        text-align: center;
+        text-decoration: underline;
+        margin-top: 10px; }
 
 @-webkit-keyframes animatetop {
   from {
@@ -910,7 +846,7 @@ footer {
   display: flex; }
   .fullGoods .container .totalFullGoods .totalPhotoGoods {
     position: relative;
-    background: url("img/totalPhotoGoods.png") no-repeat center;
+    background: url("../img/totalPhotoGoods.png") no-repeat center;
     width: 871px;
     height: 680px;
     padding-top: 56px; }
@@ -1710,5 +1646,28 @@ footer {
 .full_Info {
   padding-top: 40px;
   padding-bottom: 73px; }
+  .full_Info .container .info hr {
+    width: 635px;
+    margin-left: 155px; }
+  .full_Info .container .info .telephone_info {
+    padding-bottom: 40px; }
+    .full_Info .container .info .telephone_info .phone {
+      margin-left: 358px; }
+      .full_Info .container .info .telephone_info .phone li {
+        font-size: 20px; }
+  .full_Info .container .info .main_info {
+    margin-left: 358px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    line-height: 30px; }
+    .full_Info .container .info .main_info .clock {
+      font-size: 20px; }
+    .full_Info .container .info .main_info p {
+      font-size: 20px; }
+  .full_Info .container .info .media_info .media {
+    margin-left: 358px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    line-height: 30px; }
 
 /*# sourceMappingURL=pprpro.css.map */

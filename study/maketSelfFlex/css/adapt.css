@@ -150,6 +150,10 @@
         footer .container .colomns ul li{
                 font-size: 11px;
         }
+        
+        #myModalCategory .leftMenuCategory .leftMenuCategoryMore .leftMenuCategoryMoreUl {
+                width: 310px; }
+
 }
 @media all  and (max-width:530px){
         .container{
@@ -226,6 +230,16 @@
         footer .container .colomns ul li{
                 font-size: 8px;
         }
+
+
+
+        #myModalCategory .leftMenuCategory .leftMenuCategoryMore {
+                top: 371px;
+                right: 0px;
+                
+        }
+        #myModalCategory .leftMenuCategory .leftMenuCategoryMore .leftMenuCategoryMoreUl {
+                width: 310px; }
 }
 
 
@@ -549,33 +563,33 @@
 
 /* адрес */
 @media all  and (max-width:924px){
-        .full_Info .container .info .media_info {
-                width: 167px;
-                font-size: 10px;
+        .full_Info .container .info .telephone_info .phone{
+                margin-left: 100px;
         }
-        .full_Info .container .info .telephone_info{
-                font-size: 12px;
+        .full_Info .container .info .main_info{
+                margin-left: 100px;
         }
-        .full_Info .container .info .main_info .clock {
-                font-size: 12px;
-                font-weight: bold;
-                line-height: 35px; }
-                .full_Info .container .info .main_info .clock span {
-                  font-size: 10px;
-                  font-weight: normal; }
-              .full_Info .container .info .main_info p:nth-child(2) {
-                font-size: 12px;
-                font-weight: bold;
-                padding-top: 12px; }
-                .full_Info .container .info .main_info p:nth-child(2) > span {
-                  font-size: 18px;
-                  font-weight: normal; }
-              .full_Info .container .info .main_info p:nth-child(3) {
-                font-size: 12px;
-                font-weight: bold;
-                padding-top: 20px; }
-                .full_Info .container .info .main_info p:nth-child(3) > span {
-                  font-size: 10px;
-                  font-weight: normal; }
+        .full_Info .container .info .media_info .media{
+                margin-left: 100px;
+        }
+        .full_Info .container .info hr{
+                width: 442px;
+                 margin-left: 21px;
+        }
+}
+@media all  and (max-width:530px){
+        .full_Info .container .info .telephone_info .phone{
+                margin-left: 44px;
+        }
+        .full_Info .container .info .main_info{
+                margin-left: 44px;
+        }
+        .full_Info .container .info .media_info .media{
+                margin-left: 44px;
+        }
+        .full_Info .container .info hr{
+                width: 310px;
+                 margin-left: 18px;
+        }
 }
 
