@@ -150,41 +150,43 @@ function render(arr){
     var strHtml = "";
     
     for(var i=0; i<arr.length; i++){
-        strHtml += `<div class="card" id="cardId">
-                        <img src="${arr[i].imgSrc}" class="card-img-top">
-                        <div class="card-price">
-                            <p class="mainPrice">${arr[i].price}р</p>
-                            <p class="mainPreviousPrice">${arr[i].previousPrice}</p>
-                            <p class="mainSale" >${arr[i].sale}</p>
-                        </div>
-                        <p class="mainBrand" >${arr[i].brand}</p>
-                        <div class="likesStars">
-                            <div class="stars">
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M7.99998 1.33301L10.06 5.50634L14.6666 6.17967L11.3333 9.42634L12.12 14.013L7.99998 11.8463L3.87998 14.013L4.66665 9.42634L1.33331 6.17967L5.93998 5.50634L7.99998 1.33301Z" stroke="#FADE4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg> 
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"> 
-                                            <path d="M7.99998 1.33301L10.06 5.50634L14.6666 6.17967L11.3333 9.42634L12.12 14.013L7.99998 11.8463L3.87998 14.013L4.66665 9.42634L1.33331 6.17967L5.93998 5.50634L7.99998 1.33301Z" stroke="#FADE4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> 
-                                        </svg>
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">  
-                                            <path d="M7.99998 1.33301L10.06 5.50634L14.6666 6.17967L11.3333 9.42634L12.12 14.013L7.99998 11.8463L3.87998 14.013L4.66665 9.42634L1.33331 6.17967L5.93998 5.50634L7.99998 1.33301Z" stroke="#FADE4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">    
-                                            <path d="M7.99998 1.33301L10.06 5.50634L14.6666 6.17967L11.3333 9.42634L12.12 14.013L7.99998 11.8463L3.87998 14.013L4.66665 9.42634L1.33331 6.17967L5.93998 5.50634L7.99998 1.33301Z" stroke="#FADE4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg> 
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">  
-                                            <path d="M7.99998 1.33301L10.06 5.50634L14.6666 6.17967L11.3333 9.42634L12.12 14.013L7.99998 11.8463L3.87998 14.013L4.66665 9.42634L1.33331 6.17967L5.93998 5.50634L7.99998 1.33301Z" stroke="#FADE4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
+        strHtml += `<a href="https://yulianashilko.github.io/fd1-155-21/study/maketSelfFlex/indexMaketSelfGood.html"> 
+                    <div class="card" id="cardId">
+                            <img src="${arr[i].imgSrc}" class="card-img-top">
+                            <div class="card-price">
+                                <p class="mainPrice">${arr[i].price}р</p>
+                                <p class="mainPreviousPrice">${arr[i].previousPrice}</p>
+                                <p class="mainSale" >${arr[i].sale}</p>
                             </div>
-                            <p class="mainLikes">${arr[i].likes}</p>
+                            <p class="mainBrand" >${arr[i].brand}</p>
+                            <div class="likesStars">
+                                <div class="stars">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.99998 1.33301L10.06 5.50634L14.6666 6.17967L11.3333 9.42634L12.12 14.013L7.99998 11.8463L3.87998 14.013L4.66665 9.42634L1.33331 6.17967L5.93998 5.50634L7.99998 1.33301Z" stroke="#FADE4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+                                                <path d="M7.99998 1.33301L10.06 5.50634L14.6666 6.17967L11.3333 9.42634L12.12 14.013L7.99998 11.8463L3.87998 14.013L4.66665 9.42634L1.33331 6.17967L5.93998 5.50634L7.99998 1.33301Z" stroke="#FADE4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> 
+                                            </svg>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">  
+                                                <path d="M7.99998 1.33301L10.06 5.50634L14.6666 6.17967L11.3333 9.42634L12.12 14.013L7.99998 11.8463L3.87998 14.013L4.66665 9.42634L1.33331 6.17967L5.93998 5.50634L7.99998 1.33301Z" stroke="#FADE4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">    
+                                                <path d="M7.99998 1.33301L10.06 5.50634L14.6666 6.17967L11.3333 9.42634L12.12 14.013L7.99998 11.8463L3.87998 14.013L4.66665 9.42634L1.33331 6.17967L5.93998 5.50634L7.99998 1.33301Z" stroke="#FADE4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">  
+                                                <path d="M7.99998 1.33301L10.06 5.50634L14.6666 6.17967L11.3333 9.42634L12.12 14.013L7.99998 11.8463L3.87998 14.013L4.66665 9.42634L1.33331 6.17967L5.93998 5.50634L7.99998 1.33301Z" stroke="#FADE4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                </div>
+                                <p class="mainLikes">${arr[i].likes}</p>
+                            </div>
+                            <div class="basket12">
+                                <button>В корзину</button>
+                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.84 3.60987C20.3292 3.09888 19.7228 2.69352 19.0554 2.41696C18.3879 2.14039 17.6725 1.99805 16.95 1.99805C16.2275 1.99805 15.5121 2.14039 14.8446 2.41696C14.1772 2.69352 13.5708 3.09888 13.06 3.60987L12 4.66987L10.94 3.60987C9.9083 2.57818 8.50903 1.99858 7.05 1.99858C5.59096 1.99858 4.19169 2.57818 3.16 3.60987C2.1283 4.64156 1.54871 6.04084 1.54871 7.49987C1.54871 8.95891 2.1283 10.3582 3.16 11.3899L4.22 12.4499L12 20.2299L19.78 12.4499L20.84 11.3899C21.351 10.8791 21.7563 10.2727 22.0329 9.60523C22.3095 8.93777 22.4518 8.22236 22.4518 7.49987C22.4518 6.77738 22.3095 6.06198 22.0329 5.39452C21.7563 4.72706 21.351 4.12063 20.84 3.60987V3.60987Z" stroke="#FB000F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
                         </div>
-                        <div class="basket12">
-                            <button>В корзину</button>
-                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M20.84 3.60987C20.3292 3.09888 19.7228 2.69352 19.0554 2.41696C18.3879 2.14039 17.6725 1.99805 16.95 1.99805C16.2275 1.99805 15.5121 2.14039 14.8446 2.41696C14.1772 2.69352 13.5708 3.09888 13.06 3.60987L12 4.66987L10.94 3.60987C9.9083 2.57818 8.50903 1.99858 7.05 1.99858C5.59096 1.99858 4.19169 2.57818 3.16 3.60987C2.1283 4.64156 1.54871 6.04084 1.54871 7.49987C1.54871 8.95891 2.1283 10.3582 3.16 11.3899L4.22 12.4499L12 20.2299L19.78 12.4499L20.84 11.3899C21.351 10.8791 21.7563 10.2727 22.0329 9.60523C22.3095 8.93777 22.4518 8.22236 22.4518 7.49987C22.4518 6.77738 22.3095 6.06198 22.0329 5.39452C21.7563 4.72706 21.351 4.12063 20.84 3.60987V3.60987Z" stroke="#FB000F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                    </div>`
+                    </a>`
     }
 
     app.innerHTML = strHtml;

@@ -357,15 +357,15 @@
         .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising{
                 width: 800px;
         }
-        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card{
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising a .card{
                 width: 190px;
         }
-        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card img{
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising a .card img{
                 margin-left: 7px;
                 margin-top: 47px;
                 width: 194px;
         }
-        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card .mainBrand{
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising a .card .mainBrand{
                 width: 142px;
                 padding-bottom: 70px;
         }
@@ -414,16 +414,16 @@
         .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising{
                 width: 500px;
         }
-        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card{
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising a .card{
                 width: 151px;
                 height: 454px;
         }
-        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card img{
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising a .card img{
                 width: 137px;
         }
-        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card .mainBrand,
-        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card .card-price,
-        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card .likesStars .stars{
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising a .card .mainBrand,
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising a .card .card-price,
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising a .card .likesStars .stars{
                 margin-left: 10px;
         }
         .fullOfSearch .container .full .rightFullOfSearch .FullGoods #showContentCameras{
@@ -454,7 +454,7 @@
         }
         .fullOfSearch .container .full .rightFullOfSearch .FullGoods {
                 height: 1419px;
-                width: 320px;
+                width: 350px;
         }
 
         .fullOfSearch .container .full .rightFullOfSearch .SortShow .SortBy p{
@@ -474,9 +474,9 @@
                 width: 350px;
         }
         
-        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card .mainBrand,
-        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card .card-price,
-        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card .likesStars .stars{
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising a .card .mainBrand,
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising a .card .card-price,
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising a .card .likesStars .stars{
                 margin-left: 10px;
         }
         .fullOfSearch .container .full .rightFullOfSearch .FullGoods #showContentCameras{

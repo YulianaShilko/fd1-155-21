@@ -1540,7 +1540,7 @@ footer {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         margin-top: 18px; }
-        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card {
+        .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising a .card {
           display: none;
           width: 267px;
           height: 499px;
@@ -1551,20 +1551,20 @@ footer {
           margin-left: 15px;
           position: relative;
           margin-bottom: 22px; }
-          .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card img {
+          .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising a .card img {
             margin-left: 34px;
             margin-top: 63px;
             padding-bottom: 40px; }
-          .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card .card-price {
+          .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising a .card .card-price {
             margin-left: 47px;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex; }
-            .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card .card-price .mainPrice {
+            .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising a .card .card-price .mainPrice {
               font-weight: bold;
               font-size: 18px;
               line-height: 21px; }
-            .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card .card-price .mainPreviousPrice {
+            .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising a .card .card-price .mainPreviousPrice {
               font-weight: normal;
               font-size: 14px;
               line-height: 21px;
@@ -1572,12 +1572,12 @@ footer {
               text-decoration: line-through;
               margin-right: 10px;
               margin-left: 10px; }
-            .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card .card-price .mainSale {
+            .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising a .card .card-price .mainSale {
               font-weight: normal;
               font-size: 14px;
               line-height: 21px;
               color: red; }
-          .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card .mainBrand {
+          .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising a .card .mainBrand {
             font-weight: normal;
             font-size: 14px;
             line-height: 16px;
@@ -1587,23 +1587,23 @@ footer {
             margin-bottom: 8px;
             width: 218px;
             height: 32px; }
-          .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card .likesStars {
+          .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising a .card .likesStars {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex; }
-            .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card .likesStars .stars {
+            .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising a .card .likesStars .stars {
               margin-left: 47px; }
-            .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card .likesStars .mainLikes {
+            .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising a .card .likesStars .mainLikes {
               font-weight: normal;
               font-size: 14px;
               line-height: 16px;
               opacity: 0.5;
               margin-left: 10px; }
-          .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card .basket12 {
+          .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising a .card .basket12 {
             display: none;
             padding-top: 22.9px;
             margin-left: 47px; }
-            .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card .basket12 button {
+            .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising a .card .basket12 button {
               width: 120px;
               height: 36px;
               background: #FB000F;
@@ -1613,10 +1613,10 @@ footer {
               font-size: 14px;
               line-height: 16px;
               border: none; }
-            .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card .basket12 svg {
+            .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising a .card .basket12 svg {
               margin-left: 10px;
               margin-top: 7px; }
-          .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card:hover {
+          .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising a .card:hover {
             cursor: pointer;
             -webkit-box-shadow: 0px 4px 8px 8px #F4F4F4;
                     box-shadow: 0px 4px 8px 8px #F4F4F4;
@@ -1624,7 +1624,7 @@ footer {
                     transform: scale(1.05);
             -webkit-transition: 0.7s;
             transition: 0.7s; }
-            .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising .card:hover > .basket12 {
+            .fullOfSearch .container .full .rightFullOfSearch .FullGoods .beforeTheAdvertising a .card:hover > .basket12 {
               display: -webkit-box;
               display: -ms-flexbox;
               display: flex; }

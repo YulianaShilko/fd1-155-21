@@ -2195,108 +2195,110 @@ footer{
                         flex-wrap: wrap;
                         margin-top: 18px;
 
-                        .card{
-                            display: none;
-                            width: 267px;
-                            height: 499px;
-                            background: #FFFFFF;
-                            box-shadow: none;
-                            border-radius: 20px;
-                            margin-left: 15px;
-                            position: relative;
-                            margin-bottom: 22px;
+                        a{
 
-                            img{
-                                margin-left: 34px;
-                                margin-top: 63px;
-                                padding-bottom: 40px;
-                            }
-                            .card-price{
-                                margin-left: 47px;
-                                display: flex;
-
-                                .mainPrice{
-                                    font-weight: bold;
-                                    font-size: $text-size + 2;
-                                    line-height: 21px;
-                                }
-
-                                .mainPreviousPrice{
-                                    font-weight: normal;
-                                    font-size: $mini-text;
-                                    line-height: 21px;
-                                    color: $grey1;
-                                    text-decoration: line-through;
-                                    margin-right: 10px;
-                                    margin-left: 10px;
-                                }
-                                .mainSale{
-                                    font-weight: normal;
-                                    font-size: $mini-text;
-                                    line-height: 21px;
-                                    color: red;
-                                }
-                            }
-                            .mainBrand{
-                                font-weight: normal;
-                                font-size: $mini-text;
-                                line-height: 16px;
-                                color: $grey1;
-                                margin-left: 47px;
-                                margin-top: 8px;
-                                margin-bottom: 8px;
-                                width: 218px;
-                                height: 32px;
-                            }
-                            .likesStars{
-                                display: flex;
-                                .stars{
-                                    margin-left: 47px;
-                                }
-                                .mainLikes{
-                                    font-weight: normal;
-                                    font-size: $mini-text;
-                                    line-height: 16px;
-                                    opacity: 0.5;
-                                    margin-left: 10px;
-                                }
-
-                            }
-                            .basket12{
+                            .card{
                                 display: none;
-                                padding-top: 22.9px;
-                                margin-left: 47px;
-                                
-                                button{
-                                    width: 120px;
-                                     height: 36px;
-                                    background: #FB000F;
-                                    border-radius: 8px;
-                                    color: $whiteMain;
-                                    font-weight: 500;
+                                width: 267px;
+                                height: 499px;
+                                background: #FFFFFF;
+                                box-shadow: none;
+                                border-radius: 20px;
+                                margin-left: 15px;
+                                position: relative;
+                                margin-bottom: 22px;
+
+                                img{
+                                    margin-left: 34px;
+                                    margin-top: 63px;
+                                    padding-bottom: 40px;
+                                }
+                                .card-price{
+                                    margin-left: 47px;
+                                    display: flex;
+
+                                    .mainPrice{
+                                        font-weight: bold;
+                                        font-size: $text-size + 2;
+                                        line-height: 21px;
+                                    }
+
+                                    .mainPreviousPrice{
+                                        font-weight: normal;
+                                        font-size: $mini-text;
+                                        line-height: 21px;
+                                        color: $grey1;
+                                        text-decoration: line-through;
+                                        margin-right: 10px;
+                                        margin-left: 10px;
+                                    }
+                                    .mainSale{
+                                        font-weight: normal;
+                                        font-size: $mini-text;
+                                        line-height: 21px;
+                                        color: red;
+                                    }
+                                }
+                                .mainBrand{
+                                    font-weight: normal;
                                     font-size: $mini-text;
                                     line-height: 16px;
-                                    border:none;
+                                    color: $grey1;
+                                    margin-left: 47px;
+                                    margin-top: 8px;
+                                    margin-bottom: 8px;
+                                    width: 218px;
+                                    height: 32px;
                                 }
-                                svg{
-                                    margin-left: 10px;
-                                    margin-top: 7px;
-                                }
-                            }
-
-                            &:hover{
-                                cursor: pointer;
-                                box-shadow: 0px 4px 8px 8px #F4F4F4;
-                                transform: scale(1.05);
-                                transition: 0.7s;
-
-                                & > .basket12{
+                                .likesStars{
                                     display: flex;
-  
+                                    .stars{
+                                        margin-left: 47px;
+                                    }
+                                    .mainLikes{
+                                        font-weight: normal;
+                                        font-size: $mini-text;
+                                        line-height: 16px;
+                                        opacity: 0.5;
+                                        margin-left: 10px;
+                                    }
+
+                                }
+                                .basket12{
+                                    display: none;
+                                    padding-top: 22.9px;
+                                    margin-left: 47px;
+                                    
+                                    button{
+                                        width: 120px;
+                                        height: 36px;
+                                        background: #FB000F;
+                                        border-radius: 8px;
+                                        color: $whiteMain;
+                                        font-weight: 500;
+                                        font-size: $mini-text;
+                                        line-height: 16px;
+                                        border:none;
+                                    }
+                                    svg{
+                                        margin-left: 10px;
+                                        margin-top: 7px;
+                                    }
+                                }
+
+                                &:hover{
+                                    cursor: pointer;
+                                    box-shadow: 0px 4px 8px 8px #F4F4F4;
+                                    transform: scale(1.05);
+                                    transition: 0.7s;
+
+                                    & > .basket12{
+                                        display: flex;
+    
+                                    }
                                 }
                             }
                         }
-
                         
                     }
                     #showContentCameras{
