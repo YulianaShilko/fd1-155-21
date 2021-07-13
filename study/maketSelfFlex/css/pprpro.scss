@@ -942,7 +942,7 @@ header{
                         &:nth-child(2){
                             font-size: $mini-text;
                             text-decoration-line: line-through;
-                            right: 72px;
+                            right: 62px;
                             line-height: 16px;
                             color: rgba(0, 0, 0, 0.5);
                         }
@@ -950,7 +950,7 @@ header{
 
                     span{
                         position: absolute;
-                        bottom: 0;
+                        bottom: -19px;
                         line-height: 16px;
                         color: rgba(0, 0, 0, 0.5);
                         font-size: $mini-text;
@@ -2068,6 +2068,7 @@ footer{
                   color: $black;
 
                   span{
+                      display: block;
                       color: red;
                   }
 

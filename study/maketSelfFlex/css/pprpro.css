@@ -682,12 +682,12 @@ header {
           font-size: 14px;
           -webkit-text-decoration-line: line-through;
                   text-decoration-line: line-through;
-          right: 72px;
+          right: 62px;
           line-height: 16px;
           color: rgba(0, 0, 0, 0.5); }
       .hits .container ul a li span {
         position: absolute;
-        bottom: 0;
+        bottom: -19px;
         line-height: 16px;
         color: rgba(0, 0, 0, 0.5);
         font-size: 14px; }
@@ -1439,6 +1439,7 @@ footer {
       .orderFull .container .orderRight .adressItogo p {
         color: #000000; }
         .orderFull .container .orderRight .adressItogo p span {
+          display: block;
           color: red; }
     .orderFull .container .orderRight button {
       padding: 16px 105px;
@@ -1766,5 +1767,4 @@ footer {
     padding-top: 40px;
     padding-bottom: 40px;
     line-height: 30px; }
-
 /*# sourceMappingURL=pprpro.css.map */
